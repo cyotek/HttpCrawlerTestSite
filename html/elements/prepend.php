@@ -2,8 +2,8 @@
 
     $currentDir = __DIR__;
     
-    define('CURDIR', $currentDir . '\\');
-    define('LIBDIR', dirname(dirname($currentDir)) . '\\includes\\');
+    define('CURDIR', $currentDir . '/');
+    define('LIBDIR', dirname(dirname($currentDir)) . '/includes/');
 
     require_once LIBDIR . 'functions.php';
 ?>

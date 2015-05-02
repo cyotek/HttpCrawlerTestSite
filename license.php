@@ -6,11 +6,11 @@
 
   renderTemplateStart(); 
 
-  require_once LIBDIR . 'markdown\Markdown.inc.php'; 
+  require_once LIBDIR . 'markdown/Markdown.inc.php'; 
 
   use \Michelf\Markdown;
 
-  $licenseMarkdown = file_get_contents(CURDIR .'license.md');
+  $licenseMarkdown = file_get_contents(CURDIR .'LICENSE.md');
   $licenseHtml = Markdown::defaultTransform($licenseMarkdown);
 
 ?>

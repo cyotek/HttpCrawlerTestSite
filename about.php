@@ -6,11 +6,11 @@
 
   renderTemplateStart(); 
 
-  require_once LIBDIR . 'markdown\Markdown.inc.php'; 
+  require_once LIBDIR . 'markdown/Markdown.inc.php'; 
 
   use \Michelf\Markdown;
 
-  $aboutMarkdown = file_get_contents(CURDIR .'readme.md');
+  $aboutMarkdown = file_get_contents(CURDIR .'README.md');
   $aboutHtml = Markdown::defaultTransform($aboutMarkdown);
 
 ?>
