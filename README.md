@@ -1,7 +1,7 @@
 HTTP Crawler Test Site
 ----------------------
 
-This website was created to replace the original static website used for testing WebCopy features, and has been expanded to cover additional scenarios and also to ensure a lean site that doesn't slow down integration testing unnecessarily. Of course, writing better tests is just as important. But every little helps, and it's already found some bugs in WebCopy's crawl engine so is serving its purpose quite nicely.
+This website was created to replace the original static website used for testing WebCopy features, expanded to cover additional scenarios that the original didn't handle and to ensure a lean site that doesn't slow down integration testing unnecessarily. Of course, writing better tests is just as important! But every little helps, and it's already found some bugs in WebCopy's crawl engine so is serving its purpose quite nicely.
 
 Cyotek is a .NET shop and usually everything is written in C# using Visual Studio. This time however we decided to keep it simple and this site has been written with PHP using WebMatrix. As we aren't PHP coders and don't have much of a clue on best practices for writing PHP or even most of the language the code quality is probably less than stellar. Although it was fairly fun to write - it doesn't need an ever increasing amount of binary dependencies, no assembly bindings or version woes... it just works.
 
