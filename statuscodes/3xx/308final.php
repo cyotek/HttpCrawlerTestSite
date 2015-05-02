@@ -7,7 +7,6 @@
   renderStatusCodesTemplateStart(); 
  
 ?>
-  <h1><?php echo PAGE_TITLE ?></h1>
 
   <p>This page serves no purpose other than being the final destination of a 308 redirect.</p>
 
