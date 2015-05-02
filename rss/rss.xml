@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">
+  <channel xml:base="http://www.cyotek.com/">
+    <title>RSS</title>
+    <description>RSS</description>
+    <language>en-gb</language>
+    <copyright>Copyright © 2015 Cyotek Ltd. All Rights Reserved.</copyright>
+    <managingEditor>richard.moss@cyotek.com</managingEditor>
+    <lastBuildDate>Mon, 27 Apr 2015 15:39:55 Z</lastBuildDate>
+    <generator>Site 1.0.0.0</generator>
+    <a10:id>rss</a10:id>
+  </channel>
+</rss>
