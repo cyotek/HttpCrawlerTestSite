@@ -374,6 +374,7 @@ function createHtmlElementsNavBar($includeHeader = false)
     }
 
     createNavigationLink('Anchor',        getHtmlRelativeUrl() . 'elements/a.php');
+    createNavigationLink('Base',          getHtmlRelativeUrl() . 'elements/base.php');
     createNavigationLink('Image',         getHtmlRelativeUrl() . 'elements/img.php');
     createNavigationLink('Inline Frame',  getHtmlRelativeUrl() . 'elements/iframe.php');
     createNavigationLink('Link',          getHtmlRelativeUrl() . 'elements/link.php');
@@ -395,8 +396,13 @@ function createHtmlAttributesNavBar($includeHeader = false)
     echo '</nav>';
 }
 
+function getBaseUrl()
+{
+    return 'http://' . $_SERVER['HTTP_HOST'];
+}
+
 function getFullyQualifiedUrl($relativeUri)
 {
-    return 'http://' . $_SERVER['HTTP_HOST'] . $relativeUri;
+    return getBaseUrl() . $relativeUri;
 }
 ?>
