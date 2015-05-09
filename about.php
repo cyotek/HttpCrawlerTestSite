@@ -22,6 +22,14 @@
 
 <?php echo $aboutHtml ?>
 
+    <h2>Source Code</h2>
+
+    <p>The source code for this site is available from <a href="https://github.com/cyotek/HttpCrawlerTestSite">Cyotek's GitHub page</a>.</p>
+
+    <h2>License</h2>
+
+    <p>This site and its source code is licensed via the MIT License. <a href="/license.php">View License</a>.</p>
+
   </div>
 
 <?php renderTemplateEnd(); ?>
