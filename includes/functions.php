@@ -349,6 +349,7 @@ function createFeaturesNavBar()
     createNavigationLink('Redirect Loop',           getFeatureRelativeUrl() . 'redirectloop.php');
     createNavigationLink('Special Characters',      getFeatureRelativeUrl() . 'specialcharacters.php');
     createNavigationLink('Style Sheets',            getFeatureRelativeUrl() . 'stylesheets.php');
+    createNavigationLink('URL Normalization',      getFeatureRelativeUrl() . 'normalize.php');
     createNavigationLink('User Agent',              getFeatureRelativeUrl() . 'useragent.php');
 
     echo '</nav>';
