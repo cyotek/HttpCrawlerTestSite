@@ -175,10 +175,10 @@ function getHttpDescription($statusCode)
 function getLongHttpDescription($statusCode)
 {
     switch($statusCode) {
-    case 301:
+    case 300:
         $result = 'Indicates multiple options for the resource that the client may follow. It, for instance, could be used to present different format options for video, list files with different extensions, or word sense disambiguation.';
         break;
-    case 300:
+    case 301:
         $result = 'This and all future requests should be directed to the given URI.';
         break;
     case 302:
