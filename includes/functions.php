@@ -307,7 +307,7 @@ function createHttp3xxNavBar($includeHeader = false)
         $header = null;
     }
 
-    createHttpNavBar($header, array(301, 302, 303, 304, 307, 308));
+    createHttpNavBar($header, array(300, 301, 302, 303, 304, 307, 308));
 }
 
 function createHttp4xxNavBar($includeHeader = false)
