@@ -392,8 +392,9 @@ function createHtmlAttributesNavBar($includeHeader = false)
         echo '<span class="menu-heading">Attributes</span>' . "\n";
     }
 
-    createNavigationLink('Style' , getHtmlRelativeUrl() . 'attributes/style.php');
     createNavigationLink('Custom', getHtmlRelativeUrl() . 'attributes/custom.php');
+    createNavigationLink('SrcSet', getHtmlRelativeUrl() . 'attributes/srcset.php');
+    createNavigationLink('Style' , getHtmlRelativeUrl() . 'attributes/style.php');
 
     echo '</nav>';
 }
