@@ -108,4 +108,14 @@ function renderHtmlTemplateEnd()
     renderSidebarTemplateEnd();
 }
 
+function renderCssTemplateStart($extraHeadHtml = null)
+{
+    renderSidebarTemplateStart('createCssNavBar', $extraHeadHtml);
+}
+
+function renderCssTemplateEnd()
+{
+    renderSidebarTemplateEnd();
+}
+
 ?>

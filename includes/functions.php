@@ -349,8 +349,18 @@ function createFeaturesNavBar()
     createNavigationLink('Redirect Loop',           getFeatureRelativeUrl() . 'redirectloop.php');
     createNavigationLink('Special Characters',      getFeatureRelativeUrl() . 'specialcharacters.php');
     createNavigationLink('Style Sheets',            getFeatureRelativeUrl() . 'stylesheets.php');
-    createNavigationLink('URL Normalization',      getFeatureRelativeUrl() . 'normalize.php');
+    createNavigationLink('URL Normalization',       getFeatureRelativeUrl() . 'normalize.php');
     createNavigationLink('User Agent',              getFeatureRelativeUrl() . 'useragent.php');
+
+    echo '</nav>';
+}
+
+function createCssFeaturesNavBar()
+{
+    echo '<nav class="menu docs-menu">';
+
+    createNavigationLink('@import', getCssRelativeUrl() . 'import.php');
+    createNavigationLink('ulr()',   getCssRelativeUrl() . 'url.php');
 
     echo '</nav>';
 }
@@ -358,6 +368,16 @@ function createFeaturesNavBar()
 function getHtmlRelativeUrl()
 {
     return '/html/';
+}
+
+function getCssRelativeUrl()
+{
+    return '/css/';
+}
+
+function createCssNavBar()
+{
+    createCssFeaturesNavBar();
 }
 
 function createHtmlNavBar()
@@ -380,6 +400,7 @@ function createHtmlElementsNavBar($includeHeader = false)
     createNavigationLink('Inline Frame',  getHtmlRelativeUrl() . 'elements/iframe.php');
     createNavigationLink('Link',          getHtmlRelativeUrl() . 'elements/link.php');
     createNavigationLink('Object',        getHtmlRelativeUrl() . 'elements/object.php');
+    createNavigationLink('Style',         getHtmlRelativeUrl() . 'elements/style.php');
 
     echo '</nav>';
 }

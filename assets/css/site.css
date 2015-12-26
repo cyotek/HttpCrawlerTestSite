@@ -160,3 +160,9 @@ p {
 body{
 font-family: 'Segoe UI', 'Trebuchet MS', Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
 }
+
+.version
+{
+  font-size:  smaller;
+  color: silver;
+}
