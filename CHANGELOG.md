@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.8.0
+#### Added
+* Added data URI demo
+
 ### 1.7.0
 #### Added
 * Added change log

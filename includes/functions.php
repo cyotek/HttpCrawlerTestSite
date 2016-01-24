@@ -2,8 +2,9 @@
   
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-require_once LIBDIR . 'templatefunctions.php';
+define('WEBSITE_VERSION', '1.8.0');
 
+require_once LIBDIR . 'templatefunctions.php';
 
 function createNavigationLink($text, $ref, $useOnClickEvent = false)
 {
@@ -359,8 +360,9 @@ function createCssFeaturesNavBar()
 {
     echo '<nav class="menu docs-menu">';
 
-    createNavigationLink('@import', getCssRelativeUrl() . 'import.php');
-    createNavigationLink('ulr()',   getCssRelativeUrl() . 'url.php');
+    createNavigationLink('@import',     getCssRelativeUrl() . 'import.php');
+    createNavigationLink('Data URI\'s', getCssRelativeUrl() . 'datauri.php');
+    createNavigationLink('url()',       getCssRelativeUrl() . 'url.php');
 
     echo '</nav>';
 }
