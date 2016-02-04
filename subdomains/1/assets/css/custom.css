@@ -1,0 +1,11 @@
+﻿body
+{
+  background-image: url('../img/background5.png'); 
+  background-repeat: repeat-x;
+  background-position: bottom;
+  height:  100%;
+}
+
+html{
+  height: 100%;
+}

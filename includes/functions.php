@@ -2,7 +2,7 @@
   
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.8.0');
+define('WEBSITE_VERSION', '1.9.0');
 
 require_once LIBDIR . 'templatefunctions.php';
 
@@ -349,7 +349,7 @@ function createFeaturesNavBar()
     createNavigationLink('Redirect Chain',          getFeatureRelativeUrl() . 'redirectchain.php', true);
     createNavigationLink('Redirect Loop',           getFeatureRelativeUrl() . 'redirectloop.php');
     createNavigationLink('Special Characters',      getFeatureRelativeUrl() . 'specialcharacters.php');
-    createNavigationLink('Style Sheets',            getFeatureRelativeUrl() . 'stylesheets.php');
+    createNavigationLink('Subdomains',              getFeatureRelativeUrl() . 'subdomains.php');
     createNavigationLink('URL Normalization',       getFeatureRelativeUrl() . 'normalize.php');
     createNavigationLink('User Agent',              getFeatureRelativeUrl() . 'useragent.php');
 

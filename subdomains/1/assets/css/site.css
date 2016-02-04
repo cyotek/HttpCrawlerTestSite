@@ -1,0 +1,168 @@
+/* taken from the primer docs */
+.masthead {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: seagreen
+}
+
+.masthead a {
+    color: rgba(255,255,255,0.5)
+}
+
+.masthead a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.masthead .masthead-logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff
+}
+
+.masthead .masthead-logo .mega-octicon {
+    float: left;
+    margin-right: .5rem
+}
+
+@media (min-width: 34em) {
+    .masthead {
+        text-align:left
+    }
+
+    .masthead .masthead-logo {
+        float: left
+    }
+}
+
+.masthead-nav {
+    margin-top: 1rem;
+    font-size: 1rem
+}
+
+.masthead-nav a {
+    display: inline-block
+}
+
+.masthead-nav a:not(:last-child) {
+    margin-right: 1.25rem
+}
+
+.masthead-nav .active {
+    color: #fff;
+    font-weight: 500
+}
+
+@media (max-width: 34em) {
+    .masthead-nav {
+        padding-top:1rem;
+        border-top: 0.075rem solid rgba(255,255,255,0.25)
+    }
+}
+
+@media (min-width: 34em) {
+    .masthead-nav {
+        float:right;
+        margin-top: .5rem
+    }
+}
+
+.container>*:first-child, .column>*:first-child {
+  margin-top: 0 !important;
+}
+h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+/* my bits */
+.container + .container{
+  margin-top: 2em;
+}
+
+small.unimportant{
+  color:  silver;
+}
+
+footer{
+  border-top: 1px solid silver;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+  dl {
+border:    1px solid #eee;
+  border-radius: 2px;
+      padding: 0.5em;
+  }
+
+  dt {
+    font-weight: bold;
+  margin-bottom: 0.25rem;
+  }
+  dt:after {
+    content: ":";
+  }
+  dd {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  }
+
+dd:last-child {
+  padding-bottom: 0;
+}
+
+ul{
+  margin-left: 2rem;
+}
+
+a.btn + a.btn{
+  margin-left: 0.5rem;
+}
+
+code {
+  padding: 2px 4px;
+  color: seagreen;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  white-space: nowrap;
+}
+
+p {
+  text-align: justify;
+}
+
+.blankslate p {
+  text-align: center;
+}
+
+.menu-item.selected:before{
+  background-color: seagreen;
+}
+
+body{
+font-family: 'Segoe UI', 'Trebuchet MS', Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
+}
+
+.version
+{
+  font-size:  smaller;
+  color: silver;
+}

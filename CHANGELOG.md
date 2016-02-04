@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+### 1.9.0
+#### Added
+* Added Subdomains feature demo
+
+#### Removed
+* Removed the Features\Stylesheets demo as this is covered by the HTML\Link and CSS\url() demonstrations
+
 ### 1.8.0
 #### Added
 * Added data URI demo
