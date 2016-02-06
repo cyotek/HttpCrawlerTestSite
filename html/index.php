@@ -12,7 +12,7 @@
 
     <h1><?php echo PAGE_TITLE ?></h1>
 
-    <p>This page indexes HTML tags and attributes which have relevance to the crawling of a website.</p>
+    <p>This page indexes HTML elements and attributes which have relevance to the crawling of a website.</p>
     
     <div class="columns">
 

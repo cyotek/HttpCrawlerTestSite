@@ -8,7 +8,7 @@
  
 ?>
 
-  <p>The <code>a</code> tag defines a hyper-link, which is used to link from one page to another.</p>
+  <p>The <code>&lt;a&gt;</code> element defines a hyper-link, which is used to link from one page to another.</p>
   
   <ul>
     <li><a href="/">Home Page</a></li>

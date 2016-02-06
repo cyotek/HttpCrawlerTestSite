@@ -8,7 +8,7 @@
 
 ?>
 
-  <p>The <code>base</code> tag specifies the base URL/target for all relative URLs in a document.</p>
+  <p>The <code>&lt;base&gt;</code> element specifies the base URL/target for all relative URLs in a document.</p>
   
   <img alt="Faded" src="city4.png" />
 

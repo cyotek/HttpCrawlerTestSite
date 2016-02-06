@@ -8,10 +8,10 @@
  
 ?>
 
-  <p>The <code>link</code> tag defines a link between a document and an external resource.</p>
+  <p>The <code>&lt;link&gt;</code> element defines a link between a document and an external resource.</p>
   
-  <p>The tag is most commonly used for style sheets and fav icons.</p>
+  <p>This element is most commonly used for style sheets and fav icons.</p>
 
-  <p>This page contains <code>link</code> tags pointing to a set of style sheets, a fav icon and a RSS feed.</p>
+  <p>This page contains <code>&lt;link&gt;</code> elements pointing to a set of style sheets, a fav icon and a RSS feed.</p>
 
 <?php renderHtmlTemplateEnd(); ?>

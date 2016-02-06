@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.10.0
+#### Added
+* Added `picture` element demo
+
 ### 1.9.0
 #### Added
 * Added Subdomains feature demo

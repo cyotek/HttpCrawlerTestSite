@@ -18,7 +18,7 @@ The fav icon is derived from [Material Core Check](https://www.iconfinder.com/ic
 
 Markdown processing is handled by [PHP Markdown Lib](https://michelf.ca/projects/php-markdown/).
 
-Some text has been borrowed from [Wikipedia](http://en.wikipedia.org/).
+Some text has been borrowed from [Wikipedia](http://en.wikipedia.org/) and the [Mozilla Developer Network](https://developer.mozilla.org/).
 
 The `srcset` demonstration was derived from a [WebKit.org demo](http://www.webkit.org/demos/srcset/).
 

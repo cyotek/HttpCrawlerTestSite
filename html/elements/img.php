@@ -8,7 +8,7 @@
  
 ?>
 
-  <p>The <code>img</code> tag defines an image in an HTML page.</p>
+  <p>The <code>&lt;img&gt;</code> element defines an image in a HTML page.</p>
   
   <img src="/assets/img/city1.png" alt="Alpha Upon Beta" />
   <img src="/assets/img/city2.png" alt="Gamma City" />

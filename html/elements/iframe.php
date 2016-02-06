@@ -8,7 +8,7 @@
  
 ?>
 
-  <p>The <code>iframe</code> tag specifies an in-line frame.</p>
+  <p>The <code>&lt;iframe&gt;</code> element specifies an in-line frame.</p>
   
   <iframe src="iframetest.php"></iframe>
 
