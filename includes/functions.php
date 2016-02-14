@@ -2,7 +2,7 @@
   
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.10.0');
+define('WEBSITE_VERSION', '1.11.0');
 
 require_once LIBDIR . 'templatefunctions.php';
 
@@ -342,16 +342,17 @@ function createFeaturesNavBar()
 {
     echo '<nav class="menu docs-menu">';
 
-    createNavigationLink('CDN / Alternative Hosts', getFeatureRelativeUrl() . 'cdn.php');
-    createNavigationLink('Default Document',        getFeatureRelativeUrl() . 'defaultdocuments.php');
-    createNavigationLink('Meta Refresh',            getFeatureRelativeUrl() . 'metarefresh.php');
-    createNavigationLink('Query Strings',           getFeatureRelativeUrl() . 'querystrings.php');
-    createNavigationLink('Redirect Chain',          getFeatureRelativeUrl() . 'redirectchain.php', true);
-    createNavigationLink('Redirect Loop',           getFeatureRelativeUrl() . 'redirectloop.php');
-    createNavigationLink('Special Characters',      getFeatureRelativeUrl() . 'specialcharacters.php');
-    createNavigationLink('Subdomains',              getFeatureRelativeUrl() . 'subdomains.php');
-    createNavigationLink('URL Normalization',       getFeatureRelativeUrl() . 'normalize.php');
-    createNavigationLink('User Agent',              getFeatureRelativeUrl() . 'useragent.php');
+    createNavigationLink('CDN / Alternative Hosts',  getFeatureRelativeUrl() . 'cdn.php');
+    createNavigationLink('Default Document',         getFeatureRelativeUrl() . 'defaultdocuments.php');
+    createNavigationLink('Meta Refresh',             getFeatureRelativeUrl() . 'metarefresh.php');
+    createNavigationLink('Mime types and meta data', getFeatureRelativeUrl() . 'mimetypes.php');
+    createNavigationLink('Query Strings',            getFeatureRelativeUrl() . 'querystrings.php');
+    createNavigationLink('Redirect Chain',           getFeatureRelativeUrl() . 'redirectchain.php', true);
+    createNavigationLink('Redirect Loop',            getFeatureRelativeUrl() . 'redirectloop.php');
+    createNavigationLink('Special Characters',       getFeatureRelativeUrl() . 'specialcharacters.php');
+    createNavigationLink('Subdomains',               getFeatureRelativeUrl() . 'subdomains.php');
+    createNavigationLink('URL Normalization',        getFeatureRelativeUrl() . 'normalize.php');
+    createNavigationLink('User Agent',               getFeatureRelativeUrl() . 'useragent.php');
 
     echo '</nav>';
 }
