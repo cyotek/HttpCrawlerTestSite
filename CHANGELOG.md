@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.12.0
+#### Added
+* Added spaces in URL's demonstration
+
 ### 1.11.0
 #### Added
 * Added mime type feature demo reinstating a sample PDF for meta data extraction
