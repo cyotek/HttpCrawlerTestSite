@@ -10,7 +10,7 @@ function renderH3($text)
     echo '<h3>' . $text . '</h3>';
 }
 
-function renderTemplateStart($extraHeadHtml = null)
+function renderCoreTemplateStart($extraHeadHtml = null)
 {
     $defaultTitle = SITE_TITLE;
     $title = PAGE_TITLE;
@@ -34,10 +34,20 @@ function renderTemplateStart($extraHeadHtml = null)
     <link rel="icon" href="/favicon.ico">' . "\n" . $extraHeadHtml . '
   </head>
   <body>';
+}
+
+function renderTemplateStart($extraHeadHtml = null)
+{
+    renderCoreTemplateStart($extraHeadHtml);
 
     include_once LIBDIR . 'header.php';
 }
 
+function renderCoreTemplateEnd()
+{
+    echo '  </body>
+</html>';
+}
 function renderTemplateEnd()
 {
     echo '      </div>
@@ -46,8 +56,7 @@ function renderTemplateEnd()
     
     include_once LIBDIR . 'footer.php';
 
-    echo '  </body>
-</html>';
+    renderCoreTemplateEnd();
 }
 
 function renderSidebarTemplateStart($sidebarFunctionName, $extraHeadHtml = null)

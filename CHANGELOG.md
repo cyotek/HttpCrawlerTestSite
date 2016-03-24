@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.13.0
+#### Added
+* Added HTML\Elements\Form tests based on the hidden Methods\Post test
+
 ### 1.12.0
 #### Added
 * Added spaces in URL's demonstration
