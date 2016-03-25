@@ -1,9 +1,13 @@
 Change Log
 ==========
 
+### 1.14.0
+#### Added
+* Added HTML\Elements\Frameset demo
+
 ### 1.13.0
 #### Added
-* Added HTML\Elements\Form tests based on the hidden Methods\Post test
+* Added HTML\Elements\Form demo based on the hidden Methods\Post test
 
 ### 1.12.0
 #### Added

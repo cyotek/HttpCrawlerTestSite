@@ -2,7 +2,7 @@
   
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.13.0');
+define('WEBSITE_VERSION', '1.14.0');
 
 require_once LIBDIR . 'templatefunctions.php';
 
@@ -401,6 +401,7 @@ function createHtmlElementsNavBar($includeHeader = false)
     createNavigationLink('Anchor',        getHtmlRelativeUrl() . 'elements/a.php');
     createNavigationLink('Base',          getHtmlRelativeUrl() . 'elements/base.php');
     createNavigationLink('Form',          getHtmlRelativeUrl() . 'elements/form.php');
+    createNavigationLink('Frameset',      getHtmlRelativeUrl() . 'elements/frameset.php');
     createNavigationLink('Image',         getHtmlRelativeUrl() . 'elements/img.php');
     createNavigationLink('Inline Frame',  getHtmlRelativeUrl() . 'elements/iframe.php');
     createNavigationLink('Link',          getHtmlRelativeUrl() . 'elements/link.php');
