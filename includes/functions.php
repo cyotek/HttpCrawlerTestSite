@@ -2,7 +2,7 @@
   
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.14.0');
+define('WEBSITE_VERSION', '1.15.0');
 
 require_once LIBDIR . 'templatefunctions.php';
 
@@ -28,7 +28,7 @@ function createNavigationLink($text, $ref, $useOnClickEvent = false)
 
 function getWebCopyUserManualUrl($helpTopic)
 {
-    return 'http://help.cyotek.com/cyowcopy/webframe.html#' . $helpTopic . '.html';
+    return 'http://help.cyotek.com/cyowcopy/current/' . $helpTopic . '.html';
 }
 
 function addStatusCodeInformationTable($statusCode, $tests = null, $helpTopic = null)
@@ -369,6 +369,15 @@ function createCssFeaturesNavBar()
     echo '</nav>';
 }
 
+function createJavaScriptFeaturesNavBar()
+{
+    echo '<nav class="menu docs-menu">';
+
+    createNavigationLink('URI Transformation', getJavaScriptRelativeUrl() . 'uritransform.php');
+
+    echo '</nav>';
+}
+
 function getHtmlRelativeUrl()
 {
     return '/html/';
@@ -379,9 +388,19 @@ function getCssRelativeUrl()
     return '/css/';
 }
 
+function getJavaScriptRelativeUrl()
+{
+    return '/javascript/';
+}
+
 function createCssNavBar()
 {
     createCssFeaturesNavBar();
+}
+
+function createJavaScriptNavBar()
+{
+    createJavaScriptFeaturesNavBar();
 }
 
 function createHtmlNavBar()

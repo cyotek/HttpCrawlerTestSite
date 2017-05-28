@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+### 1.15.0
+#### Added
+* Added JavaScript\URI Transformation demo
+
+#### Fixed
+* WebCopy help links now point to the new documentation
+
 ### 1.14.0
 #### Added
 * Added HTML\Elements\Frameset demo

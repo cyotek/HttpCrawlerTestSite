@@ -127,4 +127,13 @@ function renderCssTemplateEnd()
     renderSidebarTemplateEnd();
 }
 
+function renderJavaScriptTemplateStart($extraHeadHtml = null)
+{
+    renderSidebarTemplateStart('createJavaScriptNavBar', $extraHeadHtml);
+}
+
+function renderJavaScriptTemplateEnd()
+{
+    renderSidebarTemplateEnd();
+}
 ?>

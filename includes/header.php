@@ -10,6 +10,7 @@
       <a href="/features/index.php">Features</a>
       <a href="/css/index.php">CSS</a>
       <a href="/html/index.php">HTML</a>
+      <a href="/javascript/index.php">JavaScript</a>
       <a href="/about.php">About</a>
       <a href="/changelog.php">Change Log</a>
     </nav>
