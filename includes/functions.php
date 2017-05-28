@@ -475,4 +475,3 @@ function getGUID()
     }
 } 
 ?>
-
