@@ -32,7 +32,7 @@
   {
     var url;
 
-    url = category + "." + name + ".php";
+    url = category + "-" + name + ".php";
 
     window.location = url;
   }
