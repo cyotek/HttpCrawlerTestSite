@@ -2,7 +2,7 @@
 
 <?php 
 
-  define('PAGE_TITLE', 'URI Transform');
+  define('PAGE_TITLE', 'URI Transformation');
 
   renderJavaScriptTemplateStart(); 
  

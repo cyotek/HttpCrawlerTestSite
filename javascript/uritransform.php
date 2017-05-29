@@ -24,7 +24,8 @@
   <h3>Learn More</h3>
 
   <ul>
-    <li><a href="<?php echo getWebCopyUserManualUrl('urireplacements') ?>">WebCopy URI Replacement</a></li>
+    <li><a href="<?php echo getWebCopyUserManualUrl('uritransforms') ?>">WebCopy URI Transforms</a></li>
+    <li><a href="https://www.cyotek.com/blog/products/transforming-hyperlinks-when-copying-websites">Announcement post with WebCopy examples</a></li>
   </ul>
 
 <script type="text/ecmascript">
