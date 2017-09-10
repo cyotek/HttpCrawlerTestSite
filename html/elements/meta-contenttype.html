@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=big5">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>元元素內容類型 &bull; HTTP Crawler Test Site</title>
+
+    <link rel="stylesheet" href="/assets/css/primer.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+
+    <link rel="icon" href="/favicon.ico">
+
+  </head>
+  <body><header class="masthead">
+  <div class="container">
+    <a href="/" class="masthead-logo">
+      <img class="mega-octicon octicon-package" src="/assets/img/logo.png" alt="Logo" />
+      HTTP Crawler Test Site    </a>
+
+    <nav class="masthead-nav">
+      <a href="/statuscodes/index.php">Status Codes</a>
+      <a href="/features/index.php">Features</a>
+      <a href="/css/index.php">CSS</a>
+      <a href="/html/index.php">HTML</a>
+      <a href="/javascript/index.php">JavaScript</a>
+      <a href="/about.php">About</a>
+      <a href="/changelog.php">Change Log</a>
+    </nav>
+
+  </div>
+</header><div class="container">
+  <div class="columns">
+
+    <div class="one-fourth column"><nav class="menu docs-menu"><span class="menu-heading">Elements</span>
+<a class="menu-item" href="/html/elements/a.php">Anchor</a>
+<a class="menu-item" href="/html/elements/base.php">Base</a>
+<a class="menu-item" href="/html/elements/form.php">Form</a>
+<a class="menu-item" href="/html/elements/frameset.php">Frameset</a>
+<a class="menu-item" href="/html/elements/img.php">Image</a>
+<a class="menu-item" href="/html/elements/iframe.php">Inline Frame</a>
+<a class="menu-item" href="/html/elements/link.php">Link</a>
+<a class="menu-item selected" href="/html/elements/meta.php">Meta</a>
+<a class="menu-item" href="/html/elements/object.php">Object</a>
+<a class="menu-item" href="/html/elements/picture.php">Picture</a>
+<a class="menu-item" href="/html/elements/style.php">Style</a>
+</nav><nav class="menu docs-menu"><span class="menu-heading">Attributes</span>
+<a class="menu-item" href="/html/attributes/custom.php">Custom</a>
+<a class="menu-item" href="/html/attributes/srcset.php">SrcSet</a>
+<a class="menu-item" href="/html/attributes/style.php">Style</a>
+</nav>    </div>
+
+    <div class="three-fourths column body">
+    
+      <h1>Specifying the content type as part of the HTML</h1>
+  
+      <p>The source file for this HTML document has been saved with the <strong>Big5</strong> (Traditional Chinese) encoding. If the <code>Content-Type</code> header just returns <code>text/html</code> without including a character set, then the contents of this document may not be crawled correctly. However, by including a <code>meta</code> tag in the head of the document, we can supply an alternative content type value.</p>
+      
+      <p>In this example, the tag <code>&lt;meta http-equiv="Content-Type" content="text/html; charset=big5"></code> has been added to the <code>&lt;head></code> tag of the document. If the web crawler scans this tag, it should then process the document using the correct encoding.</p>
+  
+      <p>事情從來沒有像它們那樣簡單。</p>
+
+    </div>
+
+  </div>
+</div>      </div>
+  </div>
+</div><div class="container">
+  <footer class="footer">
+    <p>Copyright &copy; 2015-2017 Cyotek Ltd. All Rights Reserved.</p>
+    <p><a href="mailto:support@cyotek.com?subject=HTTP%20Crawler%20Test%20Site%20Feedback%20%28%2Fhtml%2Felements%2Fmeta-contenttype.php%29">Comments or suggestions?</a></p>
+    <p class="version">Website version 1.16.0</p>
+  </footer>
+</div>
+  </body>
+</html>

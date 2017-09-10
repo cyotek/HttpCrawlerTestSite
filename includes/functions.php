@@ -424,6 +424,7 @@ function createHtmlElementsNavBar($includeHeader = false)
     createNavigationLink('Image',         getHtmlRelativeUrl() . 'elements/img.php');
     createNavigationLink('Inline Frame',  getHtmlRelativeUrl() . 'elements/iframe.php');
     createNavigationLink('Link',          getHtmlRelativeUrl() . 'elements/link.php');
+    createNavigationLink('Meta',          getHtmlRelativeUrl() . 'elements/meta.php');
     createNavigationLink('Object',        getHtmlRelativeUrl() . 'elements/object.php');
     createNavigationLink('Picture',       getHtmlRelativeUrl() . 'elements/picture.php');
     createNavigationLink('Style',         getHtmlRelativeUrl() . 'elements/style.php');
