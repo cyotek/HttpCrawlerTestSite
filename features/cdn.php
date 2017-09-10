@@ -19,7 +19,7 @@
   <h3>Learn More</h3>
 
   <ul>
-    <li><a href="<?php echo getWebCopyUserManualUrl('AdvHosts') ?>">WebCopy CDN Settings</a></li>
+    <li><a href="<?php echo getWebCopyUserManualUrl('advhosts') ?>">WebCopy CDN Settings</a></li>
   </ul>
 
 

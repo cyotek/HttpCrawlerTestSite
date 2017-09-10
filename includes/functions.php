@@ -2,7 +2,7 @@
   
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.15.0');
+define('WEBSITE_VERSION', '1.16.0');
 
 require_once LIBDIR . 'templatefunctions.php';
 
@@ -28,7 +28,7 @@ function createNavigationLink($text, $ref, $useOnClickEvent = false)
 
 function getWebCopyUserManualUrl($helpTopic)
 {
-    return 'http://help.cyotek.com/cyowcopy/current/' . $helpTopic . '.html';
+    return 'http://docs.cyotek.com/cyowcopy/current/' . $helpTopic . '.html';
 }
 
 function addStatusCodeInformationTable($statusCode, $tests = null, $helpTopic = null)

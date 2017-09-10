@@ -19,7 +19,7 @@
   <h3>Learn More</h3>
 
   <ul>
-    <li><a href="<?php echo getWebCopyUserManualUrl('AdvSettingsUserAgent') ?>">WebCopy User Agent Settings</a></li>
+    <li><a href="<?php echo getWebCopyUserManualUrl('advsettingsuseragent') ?>">WebCopy User Agent Settings</a></li>
   </ul>
 
 <?php renderFeaturesTemplateEnd(); ?>

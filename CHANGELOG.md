@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.16.0
+#### Fixed
+* Fixed WebCopy documentation links
+
 ### 1.15.0
 #### Added
 * Added JavaScript\URI Transformation demo

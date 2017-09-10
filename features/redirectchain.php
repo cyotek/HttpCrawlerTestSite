@@ -23,7 +23,7 @@
   <h3>Learn More</h3>
 
   <ul>
-    <li><a href="<?php echo getWebCopyUserManualUrl('AdvSettingsRedirects') ?>">WebCopy Redirect Settings</a></li>
+    <li><a href="<?php echo getWebCopyUserManualUrl('advsettingsredirects') ?>">WebCopy Redirect Settings</a></li>
   </ul>
 
 <?php renderFeaturesTemplateEnd(); ?>

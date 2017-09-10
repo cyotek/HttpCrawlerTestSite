@@ -24,7 +24,7 @@
   <h3>Learn More</h3>
 
   <ul>
-    <li><a href="<?php echo getWebCopyUserManualUrl('AdvSettingsSubDomains') ?>">WebCopy Subdomain Settings</a></li>
+    <li><a href="<?php echo getWebCopyUserManualUrl('advsettingssubdomains') ?>">WebCopy Subdomain Settings</a></li>
   </ul>
 
 

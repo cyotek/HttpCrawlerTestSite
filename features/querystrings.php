@@ -22,7 +22,7 @@
   <h3>Learn More</h3>
 
   <ul>
-    <li><a href="<?php echo getWebCopyUserManualUrl('AdvSettingsQueryStrings') ?>">WebCopy Query String Settings</a></li>
+    <li><a href="<?php echo getWebCopyUserManualUrl('advsettingsquerystrings') ?>">WebCopy Query String Settings</a></li>
   </ul>
 
 <?php renderFeaturesTemplateEnd(); ?>
