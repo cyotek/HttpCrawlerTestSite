@@ -5,7 +5,7 @@ This website was created to replace the original static website used for testing
 
 Cyotek is a .NET shop and usually everything is written in C# using Visual Studio. This time however we decided to keep it simple and this site has been written with PHP using WebMatrix. As we aren't PHP coders and don't have much of a clue on best practices for writing PHP or even most of the language the code quality is probably less than stellar. Although it was fairly fun to write - it doesn't need an ever increasing amount of binary dependencies, no assembly bindings or version woes... it just works.
 
-You can view a live demo running at [http://demo.cyotek.com](http://demo.cyotek.com). To run the source you should only need PHP 5.3 or above and some form of web server. This site has been tested using IIS Express, IIS 8.5 and Apache running on some varient of Lunix.
+You can view a live demo running at [https://demo.cyotek.com](https://demo.cyotek.com). To run the source you should only need PHP 5.3 or above and some form of web server. This site has been tested using IIS Express, IIS 8.5 and Apache running on some variant of Linux.
 
 Acknowledgements
 ----------------

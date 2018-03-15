@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.16.1
+#### Added
+* HTML\Attributes\Custom to include additional demo and more information
+
 ### 1.16.0
 #### Added
 * Added HTML\Elements\Meta content type demo
