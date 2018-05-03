@@ -2,7 +2,7 @@
   
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.16.1');
+define('WEBSITE_VERSION', '1.17.0');
 
 require_once LIBDIR . 'templatefunctions.php';
 

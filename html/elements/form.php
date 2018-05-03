@@ -15,7 +15,8 @@
 <?php 
 
     echo createTestLink('Form Test', 'formtest.php');
-    echo createTestLink('Form Test within IFrame', 'formiframetest.php');
+    echo createTestLink('Form Test (IFrame)', 'formiframetest.php');
+    echo createTestLink('Form Test (Elements)', 'formelementstest.php');
 
 ?>
 
