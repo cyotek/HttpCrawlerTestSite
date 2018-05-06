@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.17.1
+#### Added
+* The hidden `input` element on the basic HTML\Elements\Form demo wasn't quoting the `value` attribute
+
 ### 1.17.0
 #### Added
 * Added Elements demo to HTML\Elements\Form
