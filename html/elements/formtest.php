@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
       
     <form method="post">
 <?php
-    echo('<input type="hidden" name="code" value="' . getGUID() . ' />"')
+    echo('<input type="hidden" name="code" value="' . getGUID() . '" />')
 ?>
       <dl class="form-group">
         <dt><label for="firstname">First name</label></dt>
