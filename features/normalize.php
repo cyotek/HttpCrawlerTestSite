@@ -14,9 +14,13 @@
 
   <p>A <strong>canonical link element</strong> is an HTML element that helps webmasters prevent duplicate content issues by specifying the "canonical", or "preferred", version of a web page as part of search engine optimization.</p>
 
-  <ul>
-    <li><a href="canonical.php">Canonical Test 1</a></li>
-    <li><a href="canonical.php?sortOrder=alphabetical">Canonical Test 2</a></li>
-  </ul>
+<h3>Tests</h3>
+
+<?php 
+
+echo createTestLink('Canonical Test 1', 'canonical.php');
+echo createTestLink('Canonical Test 2', 'canonical.php?sortOrder=alphabetica');
+
+?>
 
 <?php renderFeaturesTemplateEnd(); ?>

@@ -8,28 +8,11 @@
  
 ?>
 
- <p>A <strong>webform</strong>, <strong>web form</strong> or <strong>HTML form</strong> on a web page allows a user to enter data that is sent to a server for processing. Forms can resemble paper or database forms because web users fill out the forms using checkboxes, radio buttons, or text fields. For example, forms can be used to enter shipping or credit card data to order a product, or can be used to retrieve search results from a search engine.</p>
+ <p>This basic demonstration tests a form containing 3 fields, two user enterable and one hidden.</p>
 
-<?php
-
-if (isset($_POST['submit'])) {
-
-?>
-    <div class="flash">
-      <dl>
-        <dt>Method</dt>
-        <dd><?php echo($_SERVER['REQUEST_METHOD'])?></dd>
-        <dt>First name</dt>
-        <dd><?php echo(htmlentities($_POST['firstname']))?></dd>
-        <dt>Last name</dt>
-        <dd><?php echo(htmlentities($_POST['lastname']))?></dd>
-        <dt>Code</dt>
-        <dd><?php echo($_POST['code'])?></dd>
-      </dl>
-    </div>
-<?php
-  }
-?>
+    <?php if (isset($_POST['submit'])) {
+  printPostList();
+} ?>
       
     <form method="post">
 <?php

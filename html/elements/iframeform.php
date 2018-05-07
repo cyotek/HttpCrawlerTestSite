@@ -8,26 +8,9 @@
  
 ?>
 
-<?php
-
-if (isset($_POST['submit'])) {
-
-?>
-    <div class="flash">
-      <dl>
-        <dt>Method</dt>
-        <dd><?php echo($_SERVER['REQUEST_METHOD'])?></dd>
-        <dt>First name</dt>
-        <dd><?php echo(htmlentities($_POST['firstname']))?></dd>
-        <dt>Last name</dt>
-        <dd><?php echo(htmlentities($_POST['lastname']))?></dd>
-        <dt>Code</dt>
-        <dd><?php echo($_POST['code'])?></dd>
-      </dl>
-    </div>
-<?php
-  }
-?>
+    <?php if (isset($_POST['submit'])) {
+  printPostList();
+} ?>
       
     <form method="post">
 <?php

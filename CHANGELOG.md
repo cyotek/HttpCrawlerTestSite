@@ -1,6 +1,14 @@
 Change Log
 ==========
 
+### 1.18.0
+#### Added
+* Added Custom Action demo to HTML\Elements\Form
+* Added Multiple demo to HTML\Elements\Form
+
+#### Fixed
+* Fully qualified URL's should now use the correct protocol when HTTPS is enabled
+
 ### 1.17.1
 #### Added
 * The hidden `input` element on the basic HTML\Elements\Form demo wasn't quoting the `value` attribute
