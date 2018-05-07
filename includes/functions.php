@@ -448,7 +448,19 @@ function createHtmlAttributesNavBar($includeHeader = false)
 
 function getBaseUrl()
 {
-    return 'http://' . $_SERVER['HTTP_HOST'];
+  return getRequestProtocol() . $_SERVER['HTTP_HOST'];
+}
+
+function getRequestProtocol()
+{
+  if (isset($_SERVER['REQUEST_SCHEME'])) {
+    $protocol = $_SERVER['REQUEST_SCHEME'] . '://';
+  } elseif (isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) || isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+    $protocol = 'https://';
+  } else {
+    $protocol = 'http://';
+  }
+  return $protocol;
 }
 
 function getFullyQualifiedUrl($relativeUri)
