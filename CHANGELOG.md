@@ -1,6 +1,9 @@
 Change Log
 ==========
 
+#### Added
+* Added Features\Authentication demonstration
+
 ### 1.18.0
 #### Added
 * Added Custom Action demo to HTML\Elements\Form

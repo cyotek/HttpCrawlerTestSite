@@ -165,4 +165,9 @@ font-family: 'Segoe UI', 'Trebuchet MS', Helvetica, arial, nimbussansl, liberati
 {
   font-size:  smaller;
   color: silver;
+
+a
+{
+  text-decoration-skip: none; 
+  text-decoration-skip-ink: none; /* Why is Google so adamant on making Chrome a modern IE6 */
 }
