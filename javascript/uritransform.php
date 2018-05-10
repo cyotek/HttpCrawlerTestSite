@@ -15,10 +15,10 @@
   <h3>Tests</h3>
 
   <p>
-    <a class="btn btn-primary" href="javascript:openPage('1', 'index')">Categtory 1 Index</a>
-    <a class="btn btn-primary" href="javascript:openPage('1', 'second')">Categtory 1 Page 2</a>
-    <a class="btn btn-primary" href="javascript:openPage('2', 'index')">Categtory 2 Index</a>
-    <a class="btn btn-primary" href="redirecttracker.php?url=uritransformfinal.php">Middleman Redirect</a>
+    <a class="btn" href="javascript:openPage('1', 'index')">Categtory 1 Index</a>
+    <a class="btn" href="javascript:openPage('1', 'second')">Categtory 1 Page 2</a>
+    <a class="btn" href="javascript:openPage('2', 'index')">Categtory 2 Index</a>
+    <a class="btn" href="redirecttracker.php?url=uritransformfinal.php">Middleman Redirect</a>
   </p>
 
   <h3>Learn More</h3>

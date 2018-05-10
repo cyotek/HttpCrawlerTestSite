@@ -1,8 +1,12 @@
 Change Log
 ==========
 
+### 1.19.0
 #### Added
 * Added Features\Authentication demonstration
+
+#### Changed
+* Added `text-decoration-skip-ink` to undo Google's roughshod "we know what's best for you"
 
 ### 1.18.0
 #### Added

@@ -2,7 +2,9 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.18.0');
+define('WEBSITE_VERSION', '1.19.0');
+
+session_start();
 
 require_once LIBDIR . 'templatefunctions.php';
 
@@ -41,7 +43,7 @@ function addStatusCodeInformationTable($statusCode, $tests = null, $helpTopic = 
     $tests = array('Test' => $statusCode . 'test.php');
   }
 
-  echo '<p>' . $description . '</p>';
+  echo '<p>' . $description . '</p>' . "\n";
 
   renderH3('Tests');
   foreach ($tests as $key => $value) {
@@ -51,17 +53,17 @@ function addStatusCodeInformationTable($statusCode, $tests = null, $helpTopic = 
   unset($key);
 
   renderH3('Learn More');
-  echo '<ul>';
+  echo '<ul>'. "\n";
   echo '<li><a href="' . $wikiUrl . '">Wikipedia</a></li>' . "\n";
   if ($helpTopic != null) {
     echo '<li><a href="' . getWebCopyUserManualUrl($helpTopic) . '">Related WebCopy Documentation</a></li>' . "\n";
   }
-  echo '</ul>';
+  echo '</ul>'. "\n";
 }
 
 function createTestLink($title, $ref)
 {
-  return '<a href="' . $ref . '" class="btn btn-primary" title="' . $ref . '">' . $title . '</a>' . "\n";
+  return '<a href="' . $ref . '" class="btn" title="' . $ref . '">' . $title . '</a>' . "\n";
 }
 
 function getHttpDescriptionWithCode($statusCode)
@@ -278,7 +280,7 @@ function renderHttpStatusTestPage($statusCode, $tests = null, $helpTopic = null)
 function createHttpNavBar($header = null, $codes, $useOnClickEvent = false)
 {
 
-  echo '<nav class="menu docs-menu">';
+  echo '<nav class="menu docs-menu">'. "\n";
 
   if ($header != null) {
     echo '<span class="menu-heading">' . $header . '</span>' . "\n";
@@ -289,7 +291,7 @@ function createHttpNavBar($header = null, $codes, $useOnClickEvent = false)
   }
   unset($value);
 
-  echo '</nav>';
+  echo '</nav>'. "\n";
 }
 
 function createFullHttpNavBar()
@@ -339,8 +341,9 @@ function getFeatureRelativeUrl()
 
 function createFeaturesNavBar()
 {
-  echo '<nav class="menu docs-menu">';
+  echo '<nav class="menu docs-menu">'. "\n";
 
+  createNavigationLink('Authentication', getFeatureRelativeUrl() . 'authentication.php');
   createNavigationLink('CDN / Alternative Hosts', getFeatureRelativeUrl() . 'cdn.php');
   createNavigationLink('Default Document', getFeatureRelativeUrl() . 'defaultdocuments.php');
   createNavigationLink('Meta Refresh', getFeatureRelativeUrl() . 'metarefresh.php');
@@ -354,27 +357,27 @@ function createFeaturesNavBar()
   createNavigationLink('URL Normalization', getFeatureRelativeUrl() . 'normalize.php');
   createNavigationLink('User Agent', getFeatureRelativeUrl() . 'useragent.php');
 
-  echo '</nav>';
+  echo '</nav>'. "\n";
 }
 
 function createCssFeaturesNavBar()
 {
-  echo '<nav class="menu docs-menu">';
+  echo '<nav class="menu docs-menu">'. "\n";
 
   createNavigationLink('@import', getCssRelativeUrl() . 'import.php');
   createNavigationLink('Data URI\'s', getCssRelativeUrl() . 'datauri.php');
   createNavigationLink('url()', getCssRelativeUrl() . 'url.php');
 
-  echo '</nav>';
+  echo '</nav>'. "\n";
 }
 
 function createJavaScriptFeaturesNavBar()
 {
-  echo '<nav class="menu docs-menu">';
+  echo '<nav class="menu docs-menu">'. "\n";
 
   createNavigationLink('URI Transformation', getJavaScriptRelativeUrl() . 'uritransform.php');
 
-  echo '</nav>';
+  echo '</nav>'. "\n";
 }
 
 function getHtmlRelativeUrl()
@@ -410,7 +413,7 @@ function createHtmlNavBar()
 
 function createHtmlElementsNavBar($includeHeader = false)
 {
-  echo '<nav class="menu docs-menu">';
+  echo '<nav class="menu docs-menu">'. "\n";
 
   if ($includeHeader) {
     echo '<span class="menu-heading">Elements</span>' . "\n";
@@ -428,12 +431,12 @@ function createHtmlElementsNavBar($includeHeader = false)
   createNavigationLink('Picture', getHtmlRelativeUrl() . 'elements/picture.php');
   createNavigationLink('Style', getHtmlRelativeUrl() . 'elements/style.php');
 
-  echo '</nav>';
+  echo '</nav>'. "\n";
 }
 
 function createHtmlAttributesNavBar($includeHeader = false)
 {
-  echo '<nav class="menu docs-menu">';
+  echo '<nav class="menu docs-menu">'. "\n";
 
   if ($includeHeader) {
     echo '<span class="menu-heading">Attributes</span>' . "\n";
@@ -443,7 +446,7 @@ function createHtmlAttributesNavBar($includeHeader = false)
   createNavigationLink('SrcSet', getHtmlRelativeUrl() . 'attributes/srcset.php');
   createNavigationLink('Style', getHtmlRelativeUrl() . 'attributes/style.php');
 
-  echo '</nav>';
+  echo '</nav>'. "\n";
 }
 
 function getBaseUrl()
@@ -505,4 +508,22 @@ function printPostList()
   }
   echo ('  </dl>' . "\n");
   echo ('</div>' . "\n");
+}
+
+function redirect($url, $statusCode = 302)
+{
+  header('Location: ' . $url, true, $statusCode);
+
+  echo ('<!DOCTYPE html>' . "\n");
+  echo ('<html lang="en">' . "\n");
+  echo ('  <head>' . "\n");
+  echo ('    <title>' . getHttpDescriptionWithCode($statusCode) . '</title>' . "\n");
+  echo ('  </head>' . "\n");
+  echo ('  <body>' . "\n");
+  echo ('    <h1>' . getHttpDescription($statusCode) . '</h1>' . "\n");
+  echo ('    <p>The requested content has been moved <a href="' . $url . '">here</a>.</p>' . "\n");
+  echo ('  </body>' . "\n");
+  echo ('</html>' . "\n");
+
+  exit();
 }

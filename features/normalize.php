@@ -19,7 +19,7 @@
 <?php 
 
 echo createTestLink('Canonical Test 1', 'canonical.php');
-echo createTestLink('Canonical Test 2', 'canonical.php?sortOrder=alphabetica');
+echo createTestLink('Canonical Test 2', 'canonical.php?sortOrder=alphabetical');
 
 ?>
 

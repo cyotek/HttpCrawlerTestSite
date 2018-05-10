@@ -14,7 +14,7 @@
 
     <p><img src="/assets/img/city12.png" alt="city12"/></p>
 
-    <p><a href="frameset.php" class="btn btn-primary" target="_top">Back to main demo</a></p>
+    <p><a href="frameset.php" class="btn" target="_top">Back to main demo</a></p>
 
   </div>
 

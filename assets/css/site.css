@@ -161,10 +161,22 @@ body{
 font-family: 'Segoe UI', 'Trebuchet MS', Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
 }
 
+.copyright
+{
+  margin-bottom: 0;
+}
+
 .version
 {
+  margin-top: 0;
   font-size:  smaller;
   color: silver;
+}
+
+.footer a
+{
+  margin-right: 0.5em;
+}
 
 a
 {
