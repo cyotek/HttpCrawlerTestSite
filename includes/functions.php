@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.19.0');
+define('WEBSITE_VERSION', '1.20.0');
 
 session_start();
 
@@ -337,6 +337,21 @@ function createHttp5xxNavBar($includeHeader = false)
 function getFeatureRelativeUrl()
 {
   return '/features/';
+}
+
+function getHttpMethodRelativeUrl()
+{
+  return '/methods/';
+}
+
+function createHttpMethodsNavBar()
+{
+  echo '<nav class="menu docs-menu">'. "\n";
+
+  createNavigationLink('HEAD', getHttpMethodRelativeUrl() . 'head.php');
+  createNavigationLink('POST', getHttpMethodRelativeUrl() . 'post.php');
+
+  echo '</nav>'. "\n";
 }
 
 function createFeaturesNavBar()

@@ -2,15 +2,11 @@
 
 <?php 
 
-  define('PAGE_TITLE', 'HTTP Post');
+  define('PAGE_TITLE', 'POST Method');
 
-  renderTemplateStart(); 
+  renderHttpMethodsTemplateStart(); 
  
 ?>
-
-  <div class="container">
-
-    <h1><?php echo PAGE_TITLE ?></h1>
 
     <p>The <code>POST</code> requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI. The data POSTed might be, for example, an annotation for existing resources; a message for a bulletin board, newsgroup, mailing list, or comment thread; a block of data that is the result of submitting a web form to a data-handling process; or an item to add to a database.</p>
 
@@ -34,6 +30,10 @@ if (isset($_POST['submit'])) {
       <p><input type="submit" name="submit" value="Submit" /></p>   
     </form>  
 
-  </div>
+  <h3>Learn More</h3>
 
-<?php renderTemplateEnd(); ?>
+<ul>
+  <li><a href="<?php echo getWebCopyUserManualUrl('forms') ?>">WebCopy Form Settings</a></li>
+</ul>
+
+<?php renderHttpMethodsTemplateEnd(); ?>

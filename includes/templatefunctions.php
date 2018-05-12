@@ -107,6 +107,16 @@ function renderFeaturesTemplateEnd()
     renderSidebarTemplateEnd();
 }
 
+function renderHttpMethodsTemplateStart($extraHeadHtml = null)
+{
+    renderSidebarTemplateStart('createHttpMethodsNavBar', $extraHeadHtml);
+}
+
+function renderHttpMethodsTemplateEnd()
+{
+    renderSidebarTemplateEnd();
+}
+
 function renderHtmlTemplateStart($extraHeadHtml = null)
 {
     renderSidebarTemplateStart('createHtmlNavBar', $extraHeadHtml);

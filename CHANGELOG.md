@@ -1,11 +1,18 @@
 Change Log
 ==========
 
+### 1.20.0
+#### Added
+* Added Methods\Head demonstration
+
+#### Changed
+* The (unlinked) index for HTTP Methods did a redirect back to the home page. Now displays a normal index page with links to available HTTP Method demonstrations.
+
 ### 1.19.0
 #### Added
 * Added Features\Authentication demonstration
 
-#### Changed
+#### Fixed
 * Added `text-decoration-skip-ink` to undo Google's roughshod "we know what's best for you"
 
 ### 1.18.0
