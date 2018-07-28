@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.20.0');
+define('WEBSITE_VERSION', '1.21.0');
 
 session_start();
 
@@ -366,6 +366,7 @@ function createFeaturesNavBar()
   createNavigationLink('Query Strings', getFeatureRelativeUrl() . 'querystrings.php');
   createNavigationLink('Redirect Chain', getFeatureRelativeUrl() . 'redirectchain.php', true);
   createNavigationLink('Redirect Loop', getFeatureRelativeUrl() . 'redirectloop.php');
+  createNavigationLink('Request Headers', getFeatureRelativeUrl() . 'requestheaders.php');
   createNavigationLink('Spaces in URL\'s', getFeatureRelativeUrl() . 'spaces.php');
   createNavigationLink('Special Characters', getFeatureRelativeUrl() . 'specialcharacters.php');
   createNavigationLink('Subdomains', getFeatureRelativeUrl() . 'subdomains.php');
@@ -514,6 +515,22 @@ function printPostList()
   echo ($_SERVER['REQUEST_METHOD']);
   echo ('</dd>' . "\n");
   foreach ($_POST as $key => $value) {
+    echo ('      <dt>');
+    echo ($key);
+    echo ('</dt>' . "\n");
+    echo ('      <dd>');
+    echo ($value);
+    echo ('</dd>' . "\n");
+  }
+  echo ('  </dl>' . "\n");
+  echo ('</div>' . "\n");
+}
+
+function printArray($array)
+{
+  echo ('<div class="flash">' . "\n");
+  echo ('  <dl>' . "\n");
+  foreach ($array as $key => $value) {
     echo ('      <dt>');
     echo ($key);
     echo ('</dt>' . "\n");

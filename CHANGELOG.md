@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.21.0
+#### Added
+* Added Features\Request Headers demonstration
+
 ### 1.20.0
 #### Added
 * Added Methods\Head demonstration
