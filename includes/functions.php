@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.21.0');
+define('WEBSITE_VERSION', '1.22.0');
 
 session_start();
 
@@ -33,9 +33,14 @@ function getWebCopyUserManualUrl($helpTopic)
   return 'http://docs.cyotek.com/cyowcopy/current/' . $helpTopic . '.html';
 }
 
+function getWikipediaUrl($topic)
+{
+  return 'https://en.wikipedia.org/wiki/' . $topic;
+}
+
 function addStatusCodeInformationTable($statusCode, $tests = null, $helpTopic = null)
 {
-  $wikiUrl = 'http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#' . $statusCode;
+  $wikiUrl = getWikipediaUrl('List_of_HTTP_status_codes#' . $statusCode);
   $rfcUrl = '';
   $description = getLongHttpDescription($statusCode);
 
@@ -360,6 +365,7 @@ function createFeaturesNavBar()
 
   createNavigationLink('Authentication', getFeatureRelativeUrl() . 'authentication.php');
   createNavigationLink('CDN / Alternative Hosts', getFeatureRelativeUrl() . 'cdn.php');
+  createNavigationLink('Cookies', getFeatureRelativeUrl() . 'cookies.php');
   createNavigationLink('Default Document', getFeatureRelativeUrl() . 'defaultdocuments.php');
   createNavigationLink('Meta Refresh', getFeatureRelativeUrl() . 'metarefresh.php');
   createNavigationLink('Mime types and meta data', getFeatureRelativeUrl() . 'mimetypes.php');
@@ -529,16 +535,23 @@ function printPostList()
 function printArray($array)
 {
   echo ('<div class="flash">' . "\n");
-  echo ('  <dl>' . "\n");
-  foreach ($array as $key => $value) {
-    echo ('      <dt>');
-    echo ($key);
-    echo ('</dt>' . "\n");
-    echo ('      <dd>');
-    echo ($value);
-    echo ('</dd>' . "\n");
+  if(count($array) === 0)
+  {
+    echo 'None';
   }
-  echo ('  </dl>' . "\n");
+  else
+  {
+    echo ('  <dl>' . "\n");
+    foreach ($array as $key => $value) {
+      echo ('      <dt>');
+      echo ($key);
+      echo ('</dt>' . "\n");
+      echo ('      <dd>');
+      echo ($value);
+      echo ('</dd>' . "\n");
+    }
+    echo ('  </dl>' . "\n");
+  }
   echo ('</div>' . "\n");
 }
 

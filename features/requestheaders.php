@@ -10,7 +10,7 @@
 
   <p>HTTP header fields are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP). They define the operating parameters of an HTTP transaction.</p>
 
-  <p>The headers provided when requesting this page are</p>
+  <p>The headers provided when requesting this page were</p>
 
   <?php printArray(apache_request_headers()); ?>
 

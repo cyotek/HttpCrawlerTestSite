@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+### 1.22.0
+#### Added
+* Added Features\Cookies demonstration
+
+#### Fixed
+* `printArray` now writes "None" if the source array has no items
+
 ### 1.21.0
 #### Added
 * Added Features\Request Headers demonstration
