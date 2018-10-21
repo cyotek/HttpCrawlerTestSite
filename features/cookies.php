@@ -18,8 +18,8 @@ With many cheerful facts about the square of the hypotenuse.
   setcookie('CrawlDemo_Expires', 'beta', $expires);
   setcookie('CrawlDemo_Path', 'gamma', $expires, '/features/');
   setcookie('CrawlDemo_Domain', 'delta', $expires, '/features/', $domain);
-  setcookie('CrawlDemo_Secure', 'delta', $expires, '/features/', $domain, true);
-  setcookie('CrawlDemo_HttpOnly', 'delta', $expires, '/features/', $domain, false, true);
+  setcookie('CrawlDemo_Secure', 'epsilon', $expires, '/features/', $domain, true);
+  setcookie('CrawlDemo_HttpOnly', 'zeta', $expires, '/features/', $domain, false, true);
   setcookie('CrawlDemo_Song', $song, $expires);
 
   define('PAGE_TITLE', 'Cookies');

@@ -14,7 +14,8 @@
 
 <?php 
     echo createTestLink('Form Based', 'authenticationform.php');
-?>
+    echo createTestLink('Form Based (Multiple)', 'authenticationmultiform.php');
+    ?>
 
 <h3>Learn More</h3>
 

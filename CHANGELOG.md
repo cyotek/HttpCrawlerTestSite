@@ -1,9 +1,14 @@
 Change Log
 ==========
 
+### 1.22.1
+#### Added
+* Cookies demonstrating wasn't using unique values for all cookies
+
 ### 1.22.0
 #### Added
 * Added Features\Cookies demonstration
+* Added Features\Authentication demonstration using multiple forms
 
 #### Fixed
 * `printArray` now writes "None" if the source array has no items
