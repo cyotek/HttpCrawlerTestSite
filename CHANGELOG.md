@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+### 1.22.2
+#### Fixed
+* Cookies set paths for all cookies
+* Domain cookies didn't work if a custom port was used
+
 ### 1.22.1
 #### Added
 * Cookies demonstrating wasn't using unique values for all cookies

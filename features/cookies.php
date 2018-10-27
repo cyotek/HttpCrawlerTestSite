@@ -2,7 +2,7 @@
 
 <?php 
 
-  $domain = $_SERVER['HTTP_HOST'];
+  $domain = getRealHost();
   $expires = time() + 3600;
   $song = "I am the very model of a modern Major-General,
 I've information vegetable, animal, and mineral,
@@ -17,9 +17,9 @@ With many cheerful facts about the square of the hypotenuse.
   setcookie('CrawlDemo_Session', 'alpha');
   setcookie('CrawlDemo_Expires', 'beta', $expires);
   setcookie('CrawlDemo_Path', 'gamma', $expires, '/features/');
-  setcookie('CrawlDemo_Domain', 'delta', $expires, '/features/', $domain);
-  setcookie('CrawlDemo_Secure', 'epsilon', $expires, '/features/', $domain, true);
-  setcookie('CrawlDemo_HttpOnly', 'zeta', $expires, '/features/', $domain, false, true);
+  setcookie('CrawlDemo_Domain', 'delta', $expires, '/', $domain);
+  setcookie('CrawlDemo_Secure', 'epsilon', $expires, '/', null, true);
+  setcookie('CrawlDemo_HttpOnly', 'zeta', $expires, '/', null, false, true);
   setcookie('CrawlDemo_Song', $song, $expires);
 
   define('PAGE_TITLE', 'Cookies');

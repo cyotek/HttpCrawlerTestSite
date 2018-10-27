@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.22.0');
+define('WEBSITE_VERSION', '1.22.2');
 
 session_start();
 
@@ -571,4 +571,10 @@ function redirect($url, $statusCode = 302)
   echo ('</html>' . "\n");
 
   exit();
+}
+
+function getRealHost()
+{
+  // https://stackoverflow.com/a/37347743/148962
+  return strstr($_SERVER['HTTP_HOST'], ':', true);
 }
