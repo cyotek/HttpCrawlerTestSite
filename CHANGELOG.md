@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.23.0
+#### Added
+* Added Features\Certificates demonstration
+
 ### 1.22.2
 #### Fixed
 * Cookies set paths for all cookies
