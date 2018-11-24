@@ -1,6 +1,10 @@
 Change Log
 ==========
 
+### 1.24.0
+#### Added
+* Added Features\Downloads demonstration
+
 ### 1.23.0
 #### Added
 * Added Features\Certificates demonstration

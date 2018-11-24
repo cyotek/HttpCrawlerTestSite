@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.23.0');
+define('WEBSITE_VERSION', '1.24.0');
 
 session_start();
 
