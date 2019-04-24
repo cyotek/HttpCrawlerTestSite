@@ -24,6 +24,7 @@ echo createTestLink('JPEG Image (10 KB)', 'downloadtest.php?type=image/jpeg&file
 echo createTestLink('JPEG Image (1 MB)', 'downloadtest.php?type=image/jpeg&filename=large.jpg&size=1048576');
 echo createTestLink('Archive (1 MB)', 'downloadtest.php?type=application/zip&filename=small.zip&size=1048576');
 echo createTestLink('Archive (10 MB)', 'downloadtest.php?type=application/zip&filename=large.zip&size=10485760');
+echo createTestLink('DVD (8 GB)', 'downloadtest.php?type=application/octet-stream&filename=dvd.iso&size=8589934592');
 
 ?>
   

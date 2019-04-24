@@ -1,24 +1,37 @@
-HTTP Crawler Test Site
-----------------------
+# HTTP Crawler Test Site
 
-This website was created to replace the original static website used for testing WebCopy features, expanded to cover additional scenarios that the original didn't handle and to ensure a lean site that doesn't slow down integration testing unnecessarily. Of course, writing better tests is just as important! But every little helps, and it's already found some bugs in WebCopy's crawl engine so is serving its purpose quite nicely.
+This website was created to replace the original static website used for testing
+WebCopy features, expanded to cover additional scenarios that the original
+didn't handle and to ensure a lean site that doesn't slow down integration testing
+unnecessarily. Of course, writing better tests is just as important! But every
+little helps, and it's already found some bugs in WebCopy's crawl engine so is
+serving its purpose quite nicely.
 
-Cyotek is a .NET shop and usually all our products are written in C# using Visual Studio. This time however we decided to keep it simple and this site has been written with PHP, originally using WebMatrix and currently Visual Studio Code. As we aren't PHP coders and don't have much of a clue on best practices for writing PHP or even most of the language the code quality is probably less than stellar. Although it was fairly fun to write - it doesn't need an ever increasing amount of binary dependencies, no assembly bindings or version woes... it just works.
+Cyotek is a .NET shop and usually all our products are written in C# using Visual
+Studio. This time however we decided to keep it simple and this site has been
+written with PHP, originally using WebMatrix and currently Visual Studio Code. As
+we aren't PHP coders and don't have much of a clue on best practices for writing
+PHP or even most of the language the code quality is probably less than stellar.
+Although it was fairly fun to write - it doesn't need an ever increasing amount
+of binary dependencies, no assembly bindings or version woes... it just works.
 
-You can view a live demo running at [https://demo.cyotek.com](https://demo.cyotek.com). To run the source you should only need PHP 5.3 or above and some form of web server. This site has been tested using IIS Express, IIS 8.5, IIS 10 and Apache running on some variant of Linux.
+You can view a live demo running at [https://demo.cyotek.com](https://demo.cyotek.com).
+To run the source you should only need PHP 5.3 or above and some form of web server.
+This site has been tested using IIS Express, IIS 8.5, IIS 10 and Apache running
+on some variant of Linux.
 
-Acknowledgements
-----------------
+## Acknowledgements
 
 CSS has been taken from [Primer](http://primercss.io/) by [GitHub](https://github.com/).
-    
+
 Various bits of PHP were lifted from the [PHP user manual](http://php.net/manual/en/index.php).
 
 The fav icon is derived from [Material Core Check](https://www.iconfinder.com/icons/326568/check_circle_outline_icon#size=512).
 
 Markdown processing is handled by [PHP Markdown Lib](https://michelf.ca/projects/php-markdown/).
 
-Some text has been borrowed from [Wikipedia](http://en.wikipedia.org/) and the [Mozilla Developer Network](https://developer.mozilla.org/).
+Some text has been borrowed from [Wikipedia](http://en.wikipedia.org/) and the
+[Mozilla Developer Network](https://developer.mozilla.org/).
 
 The `srcset` demonstration was derived from a [WebKit.org demo](http://www.webkit.org/demos/srcset/).
 

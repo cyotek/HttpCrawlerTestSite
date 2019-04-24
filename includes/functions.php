@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.24.0');
+define('WEBSITE_VERSION', '1.24.1');
 
 session_start();
 
@@ -368,6 +368,7 @@ function createFeaturesNavBar()
   createNavigationLink('Certificates', getFeatureRelativeUrl() . 'certificates.php');
   createNavigationLink('Cookies', getFeatureRelativeUrl() . 'cookies.php');
   createNavigationLink('Default Document', getFeatureRelativeUrl() . 'defaultdocuments.php');
+  createNavigationLink('Downloads', getFeatureRelativeUrl() . 'downloads.php');
   createNavigationLink('Meta Refresh', getFeatureRelativeUrl() . 'metarefresh.php');
   createNavigationLink('Mime types and meta data', getFeatureRelativeUrl() . 'mimetypes.php');
   createNavigationLink('Query Strings', getFeatureRelativeUrl() . 'querystrings.php');
