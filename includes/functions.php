@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.24.1');
+define('WEBSITE_VERSION', '1.25.0');
 
 session_start();
 
@@ -371,6 +371,7 @@ function createFeaturesNavBar()
   createNavigationLink('Downloads', getFeatureRelativeUrl() . 'downloads.php');
   createNavigationLink('Meta Refresh', getFeatureRelativeUrl() . 'metarefresh.php');
   createNavigationLink('Mime types and meta data', getFeatureRelativeUrl() . 'mimetypes.php');
+  createNavigationLink('Paths', getFeatureRelativeUrl() . 'paths.php');
   createNavigationLink('Query Strings', getFeatureRelativeUrl() . 'querystrings.php');
   createNavigationLink('Redirect Chain', getFeatureRelativeUrl() . 'redirectchain.php', true);
   createNavigationLink('Redirect Loop', getFeatureRelativeUrl() . 'redirectloop.php');
@@ -399,6 +400,7 @@ function createJavaScriptFeaturesNavBar()
 {
   echo '<nav class="menu docs-menu">'. "\n";
 
+  createNavigationLink('DOM Modification', getJavaScriptRelativeUrl() . 'dom.php');
   createNavigationLink('URI Transformation', getJavaScriptRelativeUrl() . 'uritransform.php');
 
   echo '</nav>'. "\n";

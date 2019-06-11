@@ -1,5 +1,16 @@
 # Change Log
 
+### 1.25.0
+
+#### Added
+
+* Added JavaScript\DOM Modification demonstration
+* Added Features\Paths demonstration
+
+#### Fixed
+
+* Removed multiple invalid `</div>` tags from template
+
 ### 1.24.1
 
 #### Fixed

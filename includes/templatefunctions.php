@@ -50,10 +50,6 @@ function renderCoreTemplateEnd()
 }
 function renderTemplateEnd()
 {
-    echo '      </div>
-  </div>
-</div>';
-    
     include_once LIBDIR . 'footer.php';
 
     renderCoreTemplateEnd();
@@ -146,4 +142,3 @@ function renderJavaScriptTemplateEnd()
 {
     renderSidebarTemplateEnd();
 }
-?>
