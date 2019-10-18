@@ -15,6 +15,14 @@ renderJavaScriptTemplateStart();
 <ul id="list">
 </ul>
 
+<h3>Learn More</h3>
+
+<ul>
+  <li><a href="<?php echo getWebCopyUserManualUrl('javascript') ?>">Copying JavaScript enabled websites with WebCopy</a></li>
+  <li><a href="https://www.cyotek.com/blog/products/webcopy-1-8-javascript-support">Announcement post</a></li>
+</ul>
+
+
 <script>
   (function() {
     var listElement;

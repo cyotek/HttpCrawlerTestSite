@@ -1,5 +1,15 @@
 # Change Log
 
+### 1.25.1
+
+#### Added
+
+* Added help links to JavaScript\DOM Modification demonstration
+
+#### Fixed
+
+* JavaScript\DOM Modification demonstration was showing wrong sidebar links
+
 ### 1.25.0
 
 #### Added
