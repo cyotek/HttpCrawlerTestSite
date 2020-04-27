@@ -29,10 +29,6 @@ if (!function_exists('apache_request_headers')) {
 define('PAGE_TITLE', 'Request Headers');
 
 renderFeaturesTemplateStart();
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 ?>
 
 <p>HTTP header fields are components of the header section of request and response messages in the Hypertext Transfer Protocol (HTTP). They define the operating parameters of an HTTP transaction.</p>
