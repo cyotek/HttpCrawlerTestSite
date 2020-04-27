@@ -1,5 +1,17 @@
 # Change Log
 
+### 1.25.2
+
+#### Changed
+
+* Style tweaks
+* Corrected some spelling errors or badly written text
+
+#### Fixed
+
+* Request Headers demo didn't work in some versions of PHP
+* Reformatted documentation
+
 ### 1.25.1
 
 #### Added
@@ -8,7 +20,8 @@
 
 #### Fixed
 
-* JavaScript\DOM Modification demonstration was showing wrong sidebar links
+* JavaScript\DOM Modification demonstration was showing wrong
+  sidebar links
 
 ### 1.25.0
 
@@ -29,11 +42,11 @@
 
 #### Changed
 
-* The Features\Downloads demonstration will now allow custom file sizes
-  above 10MB to be returned as the `Content-Length` but will not send
-  that volume of data
-* The Features\Downloads demonstration no longer returns more than 1MB
-  of content
+* The Features\Downloads demonstration will now allow custom
+  file sizes above 10MB to be returned as the `Content-Length`
+  but will not send that volume of data
+* The Features\Downloads demonstration no longer returns more
+  than 1MB of content
 
 ### 1.24.0
 
@@ -58,18 +71,21 @@
 
 #### Added
 
-* Cookies demonstrating wasn't using unique values for all cookies
+* Cookies demonstrating wasn't using unique values for all
+  cookies
 
 ### 1.22.0
 
 #### Added
 
 * Added Features\Cookies demonstration
-* Added Features\Authentication demonstration using multiple forms
+* Added Features\Authentication demonstration using multiple
+  forms
 
 #### Fixed
 
-* `printArray` now writes "None" if the source array has no items
+* `printArray` now writes "None" if the source array has no
+  items
 
 ### 1.21.0
 
@@ -85,8 +101,9 @@
 
 #### Changed
 
-* The (unlinked) index for HTTP Methods did a redirect back to the home page. It
-  now displays a normal index page with links to available HTTP Method demonstrations.
+* The (unlinked) index for HTTP Methods did a redirect back to
+  the home page. It now displays a normal index page with links
+  to available HTTP Method demonstrations.
 
 ### 1.19.0
 
@@ -96,8 +113,8 @@
 
 #### Fixed
 
-* Added `text-decoration-skip-ink` to undo Google's roughshod "we know what's
-  best for you"
+* Added `text-decoration-skip-ink` to undo Google's roughshod
+  "we know what's best for you"
 
 ### 1.18.0
 
@@ -108,14 +125,15 @@
 
 #### Fixed
 
-* Fully qualified URL's should now use the correct protocol when HTTPS is enabled
+* Fully qualified URLs should now use the correct protocol when
+  HTTPS is enabled
 
 ### 1.17.1
 
 #### Added
 
-* The hidden `input` element on the basic HTML\Elements\Form demo wasn't quoting
-  the `value` attribute
+* The hidden `input` element on the basic HTML\Elements\Form
+  demo wasn't quoting the `value` attribute
 
 ### 1.17.0
 
@@ -127,7 +145,8 @@
 
 #### Added
 
-* HTML\Attributes\Custom to include additional demo and more information
+* HTML\Attributes\Custom to include additional demo and more
+  information
 
 ### 1.16.0
 
@@ -159,19 +178,21 @@
 
 #### Added
 
-* Added HTML\Elements\Form demo based on the hidden Methods\Post test
+* Added HTML\Elements\Form demo based on the hidden Methods\Post
+  test
 
 ### 1.12.0
 
 #### Added
 
-* Added spaces in URL's demonstration
+* Added spaces in URLs demonstration
 
 ### 1.11.0
 
 #### Added
 
-* Added mime type feature demo reinstating a sample PDF for meta data extraction
+* Added mime type feature demo reinstating a sample PDF for meta
+  data extraction
 
 ### 1.10.0
 
@@ -187,8 +208,8 @@
 
 #### Removed
 
-* Removed the Features\Stylesheets demo as this is covered by the HTML\Link
-  and CSS\url() demonstrations
+* Removed the Features\Stylesheets demo as this is covered by
+  the HTML\Link and CSS\url() demonstrations
 
 ### 1.8.0
 
@@ -221,17 +242,18 @@
 #### Added
 
 * Added a test for the `300` status
-* Added a test for URL's stored in custom attributes
+* Added a test for URLs stored in custom attributes
 
 #### Fixed
 
-* The wrong descriptions were displayed for the `300` and `301` status test pages
+* The wrong descriptions were displayed for the `300` and `301`
+  status test pages
 
 ### 1.4.0
 
 #### Added
 
-* Added a test for canonical URL's
+* Added a test for canonical URLs
 
 ### 1.3.0
 
