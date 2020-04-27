@@ -2,7 +2,7 @@
 
 <?php 
 
-  define('PAGE_TITLE', 'Spaces in URL\'s');
+  define('PAGE_TITLE', 'Spaces in URLs');
 
   renderFeaturesTemplateStart(); 
  

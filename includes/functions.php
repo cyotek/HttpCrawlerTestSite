@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.25.1');
+define('WEBSITE_VERSION', '1.25.2');
 
 session_start();
 
@@ -376,7 +376,7 @@ function createFeaturesNavBar()
   createNavigationLink('Redirect Chain', getFeatureRelativeUrl() . 'redirectchain.php', true);
   createNavigationLink('Redirect Loop', getFeatureRelativeUrl() . 'redirectloop.php');
   createNavigationLink('Request Headers', getFeatureRelativeUrl() . 'requestheaders.php');
-  createNavigationLink('Spaces in URL\'s', getFeatureRelativeUrl() . 'spaces.php');
+  createNavigationLink('Spaces in URLs', getFeatureRelativeUrl() . 'spaces.php');
   createNavigationLink('Special Characters', getFeatureRelativeUrl() . 'specialcharacters.php');
   createNavigationLink('Subdomains', getFeatureRelativeUrl() . 'subdomains.php');
   createNavigationLink('URL Normalization', getFeatureRelativeUrl() . 'normalize.php');
@@ -390,7 +390,7 @@ function createCssFeaturesNavBar()
   echo '<nav class="menu docs-menu">'. "\n";
 
   createNavigationLink('@import', getCssRelativeUrl() . 'import.php');
-  createNavigationLink('Data URI\'s', getCssRelativeUrl() . 'datauri.php');
+  createNavigationLink('Data URIs', getCssRelativeUrl() . 'datauri.php');
   createNavigationLink('url()', getCssRelativeUrl() . 'url.php');
 
   echo '</nav>'. "\n";
@@ -400,8 +400,8 @@ function createJavaScriptFeaturesNavBar()
 {
   echo '<nav class="menu docs-menu">'. "\n";
 
+  createNavigationLink('Attribute Transformation', getJavaScriptRelativeUrl() . 'uritransform.php');
   createNavigationLink('DOM Modification', getJavaScriptRelativeUrl() . 'dom.php');
-  createNavigationLink('URI Transformation', getJavaScriptRelativeUrl() . 'uritransform.php');
 
   echo '</nav>'. "\n";
 }

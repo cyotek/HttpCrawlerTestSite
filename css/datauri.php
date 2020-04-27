@@ -2,13 +2,13 @@
 
 <?php 
 
-  define('PAGE_TITLE', 'Data URI\'s');
+  define('PAGE_TITLE', 'Data URIs');
 
   renderCssTemplateStart('<link rel="stylesheet" type="text/css" href="../../assets/css/city9.css" />'); 
  
 ?>
 
-  <p>Data URI's are a way of embbedding data (such as an image) that would normally be an external file within the original document, avoiding having to make extra requests.</p>
+  <p>Data URIs are a way of embbedding data (such as an image) that would normally be an external file within the original document, avoiding having to make extra requests.</p>
 
   <p>The image below has been embedded in the page as a base64 encoded string, avoiding the need for an external file.</p>
 
@@ -26,7 +26,7 @@
 
   <div class="city9"></div>
 
-  <h3>Long URI's</h3>
+  <h3>Long URIs</h3>
 
   <p>The nature of base64 encoding means that the encoded version is around 33% larger than the unencoded content. This page tests a photograph that, resized to 10% of the <a href="https://unsplash.com/photos/xS_RzdD5CFE">original</a> gives a data URI of nearly 93 thousand characters (by comparison, the original version was nearly 2.4 million characters when encoded).</p>
 

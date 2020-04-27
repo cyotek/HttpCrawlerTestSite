@@ -13,7 +13,7 @@
   <p>The user agent used to request this page was:</p>
 
   <p>
-    <strong><?php echo $_SERVER['HTTP_USER_AGENT'] ?></strong>
+    <pre><code><?php echo $_SERVER['HTTP_USER_AGENT'] ?></code></pre>
   </p>
 
   <h3>Learn More</h3>

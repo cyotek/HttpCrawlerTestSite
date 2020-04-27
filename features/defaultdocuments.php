@@ -8,7 +8,11 @@
  
 ?>
 
-  <p>Web servers offer the concept of a default document, so when you navigate to a sub level of a site without including a document name, the correct document will be displayed. This means two different unique URI's can actually point to the same resource, and should be handled accordingly.</p>
+<p>Web servers offer the concept of a default document, so when you navigate
+  to a sub level of a site without including a document name, the correct
+  document will be displayed. This means two different unique URIs can
+  actually point to the same resource, and should be handled accordingly.
+</p>
 
 <h3>Tests</h3>
 
