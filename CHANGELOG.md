@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.26.0
+
+#### Added
+
+* Added Image Formats demonstration
+
 ### 1.25.2
 
 #### Changed
