@@ -1,6 +1,6 @@
 <div class="container">
   <footer class="footer">
-    <p class="copyright">Copyright &copy; 2015-2020 Cyotek Ltd. All Rights Reserved.</p>
+    <p class="copyright">Copyright &copy; 2015-<?php echo date("Y") ?> Cyotek Ltd. All Rights Reserved.</p>
     <p class="version">Website version <?php echo WEBSITE_VERSION ?></p>
     <p>
       <a href="/about.php">About</a>

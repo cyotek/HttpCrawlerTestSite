@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.27.0
+
+#### Added
+
+* Added User Agent blocking demonstration
+
 ### 1.26.0
 
 #### Added
