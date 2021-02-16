@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.28.0
+
+#### Added
+
+* Added Referer header demonstration
+
 ### 1.27.0
 
 #### Added
