@@ -1,6 +1,6 @@
 <?php
 
-  if (strpos($_SERVER['HTTP_USER_AGENT'], 'WebCopy') !== false) 
+  if (strpos($_SERVER['HTTP_USER_AGENT'], 'BAD-AGENT') !== false) 
   {
     $html = '<html>
       <head>
@@ -34,7 +34,7 @@
 
 <p>Some websites use user agent sniffing and return a <code>403</code>
   (Forbidden) status code a given agent. This demonstration page will
-  return a 403 if the user agent includes the text <code>WebCopy</code>.
+  return a 403 if the user agent includes the text <code>BAD-AGENT</code>.
 </p>
 
 <p>The user agent used to request this page was:</p>

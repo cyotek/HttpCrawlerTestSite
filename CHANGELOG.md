@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.28.1
+
+#### Changed
+
+* Referer and User Agent block tests now use different triggers
+
 ### 1.28.0
 
 #### Added

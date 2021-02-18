@@ -1,6 +1,6 @@
 <?php
 
-  if (strpos($_SERVER['HTTP_REFERER'], 'WebCopy') !== false) 
+  if (strpos($_SERVER['HTTP_REFERER'], 'BAD-REFERRER') !== false) 
   {
     $html = '<html>
       <head>
@@ -33,7 +33,7 @@
 ?>
 
 <p>This demonstration page will
-  return a 403 if the referrer includes the text <code>WebCopy</code>.
+  return a 403 if the referrer includes the text <code>BAD-REFERRER</code>.
 </p>
 
 <p>The header used to request this page was:</p>
