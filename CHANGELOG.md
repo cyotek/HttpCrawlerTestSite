@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.29.0
+
+#### Added
+
+* Added fake JavaScript application
+
 ### 1.28.1
 
 #### Changed
