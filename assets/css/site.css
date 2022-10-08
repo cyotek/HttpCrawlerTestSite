@@ -1,197 +1,249 @@
 /* taken from the primer docs */
 
 .masthead {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  background-color: seagreen
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: seagreen
 }
 
 .masthead a {
-  color: rgba(255, 255, 255, 0.5)
+    color: rgba(255, 255, 255, 0.5)
 }
 
 .masthead a:hover {
-  color: #fff;
-  text-decoration: none
+    color: #fff;
+    text-decoration: none
 }
 
 .masthead .masthead-logo {
-  display: inline-block;
-  font-size: 1.5rem;
-  color: #fff
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff
 }
 
 .masthead .masthead-logo .mega-octicon {
-  float: left;
-  margin-right: .5rem
+    float: left;
+    margin-right: .5rem
 }
 
 @media (min-width: 34em) {
-  .masthead {
-    text-align: left
-  }
-  .masthead .masthead-logo {
-    float: left
-  }
+    .masthead {
+        text-align: left
+    }
+
+    .masthead .masthead-logo {
+        float: left
+    }
 }
 
 .masthead-nav {
-  margin-top: 1rem;
-  font-size: 1rem
+    margin-top: 1rem;
+    font-size: 1rem
 }
 
 .masthead-nav a {
-  display: inline-block
+    display: inline-block
 }
 
 .masthead-nav a:not(:last-child) {
-  margin-right: 1.25rem
+    margin-right: 1.25rem
 }
 
 .masthead-nav .active {
-  color: #fff;
-  font-weight: 500
+    color: #fff;
+    font-weight: 500
 }
 
 @media (max-width: 34em) {
-  .masthead-nav {
-    padding-top: 1rem;
-    border-top: 0.075rem solid rgba(255, 255, 255, 0.25)
-  }
+    .masthead-nav {
+        padding-top: 1rem;
+        border-top: 0.075rem solid rgba(255, 255, 255, 0.25)
+    }
 }
 
 @media (min-width: 34em) {
-  .masthead-nav {
-    float: right;
-    margin-top: .5rem
-  }
+    .masthead-nav {
+        float: right;
+        margin-top: .5rem
+    }
 }
 
-.container>*:first-child, .column>*:first-child {
-  margin-top: 0 !important;
+.container>*:first-child,
+.column>*:first-child {
+    margin-top: 0 !important;
 }
 
 h1 {
-  padding-bottom: 0.3em;
-  font-size: 2.25em;
-  line-height: 1.2;
-  border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  position: relative;
-  margin-top: 1em;
-  margin-bottom: 16px;
-  font-weight: bold;
-  line-height: 1.4;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: 1.4;
 }
 
 h3 {
-  font-size: 1.5em;
-  line-height: 1.43;
+    font-size: 1.5em;
+    line-height: 1.43;
 }
 
 /* my bits */
 
 .container+.container {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 
 small.unimportant {
-  color: silver;
+    color: silver;
 }
 
 footer {
-  border-top: 1px solid silver;
-  padding-top: 1rem;
-  margin-top: 1rem;
+    border-top: 1px solid silver;
+    padding-top: 1rem;
+    margin-top: 1rem;
 }
 
-.flash
-{
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-  border-radius: 2px;
+.flash {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 2px;
 }
 
 dl {
-  padding: 0.5em;
-  margin: 0;
+    padding: 0.5em;
+    margin: 0;
 }
 
 dt {
-  font-weight: bold;
-  margin-bottom: 0.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
 }
 
 dt:after {
-  content: ":";
+    content: ":";
 }
 
 dd {
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
-  word-wrap: break-word;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
 }
 
 dd:last-child {
-  padding-bottom: 0;
+    padding-bottom: 0;
 }
 
 ul {
-  margin-left: 2rem;
+    margin-left: 2rem;
 }
 
 a.btn+a.btn {
-  margin-left: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 code {
-  padding: 2px 4px;
-  color: seagreen;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-  white-space: nowrap;
+    padding: 2px 4px;
+    color: seagreen;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    white-space: nowrap;
 }
 
 p {
-  text-align: justify;
+    text-align: justify;
 }
 
 .blankslate p {
-  text-align: center;
+    text-align: center;
 }
 
 .menu-item.selected:before {
-  background-color: seagreen;
+    background-color: seagreen;
 }
 
 body {
-  font-family: 'Segoe UI', 'Trebuchet MS', Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
+    font-family: 'Segoe UI', 'Trebuchet MS', Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
 }
 
 .copyright {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .version {
-  margin-top: 0;
-  font-size: smaller;
-  color: silver;
+    margin-top: 0;
+    font-size: smaller;
+    color: silver;
 }
 
 .footer a {
-  margin-right: 0.5em;
+    margin-right: 0.5em;
 }
 
 a {
-  text-decoration-skip: none;
-  text-decoration-skip-ink: none;
-  /* Why is Google so adamant on making Chrome a modern IE6 */
+    text-decoration-skip: none;
+    text-decoration-skip-ink: none;
+    /* Why is Google so adamant on making Chrome a modern IE6 */
 }
 
-code, pre, dd {
-  font-family: "iA Writer Duospace", "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+code,
+pre,
+dd {
+    font-family: "iA Writer Duospace", "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th {
+    background-color: #f7f7f9;
+    padding: 0.5em;
+    text-align: left;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+td {
+    padding: 0.5em;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+tr:first-child th:first-child {
+    border-left: 1px solid #d8d8d8;
+    border-top-left-radius: 3px;
+}
+
+tr:first-child th:last-child {
+    border-right: 1px solid #d8d8d8;
+    border-top-right-radius: 3px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+tr td:last-child {
+    border-right: 1px solid #d8d8d8;
+}
+
+tr td:first-child {
+    border-left: 1px solid #d8d8d8;
 }

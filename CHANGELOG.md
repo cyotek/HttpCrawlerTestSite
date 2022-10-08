@@ -1,5 +1,12 @@
 # Change Log
 
+### 1.29.1
+
+#### Changed
+
+* Updated Image Formats page to include AVIF sample, and basic
+  comparison of file sizes
+
 ### 1.29.0
 
 #### Added
