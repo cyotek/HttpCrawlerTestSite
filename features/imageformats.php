@@ -16,7 +16,7 @@
 <p>While it is not especially important that a web crawler can support image
   formats, the examples below are provided for completeness. Note that as
   not all browsers support all common formats, some images may not display
-  below.</p>
+  below in the browser you are using to view this page.</p>
 
 <table>
   <thead>
@@ -33,6 +33,12 @@
       <td><code>image/apng</code></td>
       <td><code>.apng</code></td>
       <td><img src="../assets/img/formats/sample.apng" /></td>
+    </tr>
+    <tr>
+      <td>AV1 Image File Format</td>
+      <td><code>image/avif</code></td>
+      <td><code>.avif</code></td>
+      <td><img src="../assets/img/formats/sample.avif" /></td>
     </tr>
     <tr>
       <td>Bitmap file</td>
