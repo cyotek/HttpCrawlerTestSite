@@ -8,8 +8,8 @@
  
 ?>
 
-<p>There are many image file formats in the world. However, the ones listed
-  below are generally recognized as usable on the Web, though BMP is
+<p>There are many image file formats in the world. The ones listed
+  below are generally recognized as usable on the Web, although BMP is
   generally not recommended as browser support is potentially constrained;
   it should usually be avoided for web content.</p>
 
@@ -92,6 +92,76 @@
   </tbody>
 </table>
 
+<h3>File Sizes</h3>
+
+<p>
+  Ignoring quality levels, each format also has quite different file sizes -
+  the table below shows an example image saved in each format. These
+  examples are for illustrative purposes only, while I used a resized
+  version of the same source photograph for each image, default save
+  settings were used and I didn't investigate any optimisation settings.
+  Some files also have EXIF or other image metadata which affect the final
+  file size. With that said, the AVIF and WebP formats seem to be the best
+  in regards to size and something worth keeping an eye on as more software
+  packages support these formats.
+</p>
+
+<table>
+  <thead>
+    <th>Format</th>
+    <th>Size</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="../assets/img/format-compare/scaled-lighthouse.jxl">JPEG
+          XL</a></td>
+      <td>31.1 KB (31,948 bytes)</td>
+    </tr>
+    <tr>
+      <td><a
+          href="../assets/img/format-compare/scaled-lighthouse.webp">WebP</a>
+      </td>
+      <td>37.0 KB (37,972 bytes)</td>
+    </tr>
+    <tr>
+      <td><a
+          href="../assets/img/format-compare/scaled-lighthouse.avif">AVIF</a>
+      </td>
+      <td>98.7 KB (101,141 bytes)</td>
+    </tr>
+    <tr>
+      <td><a
+          href="../assets/img/format-compare/scaled-lighthouse.jpg">JPEG</a>
+      </td>
+      <td>111 KB (114,263 bytes)</td>
+    </tr>
+    <tr>
+      <td><a
+          href="../assets/img/format-compare/scaled-lighthouse.gif">GIF</a>
+      </td>
+      <td>261 KB (268,202 bytes)</td>
+    </tr>
+    <tr>
+      <td><a
+          href="../assets/img/format-compare/scaled-lighthouse.png">PNG</a>
+      </td>
+      <td>682 KB (699,212 bytes)</td>
+    </tr>
+    <tr>
+      <td><a
+          href="../assets/img/format-compare/scaled-lighthouse.tif">TIFF</a>
+      </td>
+      <td>878 KB (899,752 bytes)</td>
+    </tr>
+    <tr>
+      <td><a
+          href="../assets/img/format-compare/scaled-lighthouse.bmp">BMP</a>
+      </td>
+      <td>1.78 MB (1,870,230 bytes)</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3>Learn More</h3>
 
 <ul>
@@ -99,6 +169,5 @@
       href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types">MDN
       Image file type and format guide</a></li>
 </ul>
-
 
 <?php renderFeaturesTemplateEnd(); ?>
