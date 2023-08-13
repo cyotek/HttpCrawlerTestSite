@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.29.2
+
+#### Fixed
+
+* Reworked getRequestProtocol to look for a Cf-Visitor first
+
 ### 1.29.1
 
 #### Changed

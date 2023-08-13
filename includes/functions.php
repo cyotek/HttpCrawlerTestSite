@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.29.1');
+define('WEBSITE_VERSION', '1.29.2');
 
 session_start();
 
@@ -477,6 +477,30 @@ function createHtmlAttributesNavBar($includeHeader = false)
   echo '</nav>'. "\n";
 }
 
+if (!function_exists('apache_request_headers')) {
+  // https://stackoverflow.com/a/9276269/148962
+  function apache_request_headers()
+  {
+    $arh = array();
+    $rx_http = '/\AHTTP_/';
+    foreach ($_SERVER as $key => $val) {
+      if (preg_match($rx_http, $key)) {
+        $arh_key = preg_replace($rx_http, '', $key);
+        $rx_matches = array();
+        // do some nasty string manipulations to restore the original letter case
+        // this should work in most cases
+        $rx_matches = explode('_', $arh_key);
+        if (count($rx_matches) > 0 and strlen($arh_key) > 2) {
+          foreach ($rx_matches as $ak_key => $ak_val) $rx_matches[$ak_key] = ucfirst($ak_val);
+          $arh_key = implode('-', $rx_matches);
+        }
+        $arh[$arh_key] = $val;
+      }
+    }
+    return ($arh);
+  }
+}
+
 function getBaseUrl()
 {
   return getRequestProtocol() . $_SERVER['HTTP_HOST'];
@@ -484,13 +508,31 @@ function getBaseUrl()
 
 function getRequestProtocol()
 {
-  if (isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) || isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
-    $protocol = 'https://';
-  } elseif (isset($_SERVER['REQUEST_SCHEME'])) {
-    $protocol = $_SERVER['REQUEST_SCHEME'] . '://';
-  } else {
-    $protocol = 'http://';
+  // TODO: Why is cloudflare using https in Vistor but setting
+  // X-Forwarded-Proto to http?
+
+  $headers = apache_request_headers();
+
+  if(count($headers)) {
+    foreach ($headers as $header => $value) {
+      if($header == 'Cf-Visitor'){
+        $protocol = json_decode($value, false)->{'scheme'} . '://';
+        break;
+      }
+    }
   }
+
+  if(!isset($protocol))
+  {
+    if (isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) || isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+      $protocol = 'https://';
+    } elseif (isset($_SERVER['REQUEST_SCHEME'])) {
+      $protocol = $_SERVER['REQUEST_SCHEME'] . '://';
+    } else {
+      $protocol = 'http://';
+    }
+  }
+
   return $protocol;
 }
 
@@ -584,3 +626,5 @@ function getRealHost()
   // https://stackoverflow.com/a/37347743/148962
   return strstr($_SERVER['HTTP_HOST'], ':', true);
 }
+
+?>
