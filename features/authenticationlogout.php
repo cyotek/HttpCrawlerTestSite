@@ -16,6 +16,8 @@ if (ini_get("session.use_cookies")) {
   );
 }
 
+setcookie('CrawlDemo_LoggedIn', '', time() - 3600); ?>
+
 session_destroy();
 
 define('PAGE_TITLE', 'Log out');

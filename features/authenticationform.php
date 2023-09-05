@@ -17,6 +17,8 @@ if ($attempted == 1) {
     $_SESSION['username'] = 'guest';
     $_SESSION['friendlyname'] = 'Guest';
 
+    setcookie('CrawlDemo_LoggedIn', 'yes');
+
     redirect(getFullyQualifiedUrl(getFeatureRelativeUrl() . 'authenticationloggedin.php'));
   }
 }

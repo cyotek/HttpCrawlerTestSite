@@ -1,5 +1,12 @@
 # Change Log
 
+### 1.29.3
+
+#### Changed
+
+* `authenticationform.php` and `authenticationlogout.php` now
+  set (or remove) a cookie named `CrawlDemo_LoggedIn`
+
 ### 1.29.2
 
 #### Fixed
