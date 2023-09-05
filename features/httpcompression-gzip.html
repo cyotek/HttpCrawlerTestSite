@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTTP Compression - gzip &bull; HTTP Crawler Test Site</title>
+    <link rel="stylesheet" href="/assets/css/primer.css">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="container">
+        <a href="/" class="masthead-logo">          
+          <img class="mega-octicon octicon-package" src="/assets/img/logo.png" alt="Logo" />HTTP Crawler Test Site
+        </a>
+        <nav class="masthead-nav">
+          <a href="/statuscodes/index.php">Status Codes</a>
+          <a href="/features/index.php">Features</a>
+          <a href="/css/index.php">CSS</a>
+          <a href="/html/index.php">HTML</a>
+          <a href="/javascript/index.php">JavaScript</a>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="columns">
+        <div class="one-fourth column">
+          <nav class="menu docs-menu">
+            <a class="menu-item" href="/features/authentication.php">Authentication</a>
+            <a class="menu-item" href="/features/cdn.php">CDN / Alternative Hosts</a>
+            <a class="menu-item" href="/features/certificates.php">Certificates</a>
+            <a class="menu-item" href="/features/cookies.php">Cookies</a>
+            <a class="menu-item" href="/features/defaultdocuments.php">Default Document</a>
+            <a class="menu-item" href="/features/downloads.php">Downloads</a>
+            <a class="menu-item selected" href="/features/httpcompression.php">HTTP Compression</a>
+            <a class="menu-item" href="/features/imageformats.php">Image Formats</a>
+            <a class="menu-item" href="/features/metarefresh.php">Meta Refresh</a>
+            <a class="menu-item" href="/features/mimetypes.php">Mime types and meta data</a>
+            <a class="menu-item" href="/features/paths.php">Paths</a>
+            <a class="menu-item" href="/features/querystrings.php">Query Strings</a>
+            <a class="menu-item" href="#" onclick="window.location='/features/redirectchain.php'">Redirect Chain</a>
+            <a class="menu-item" href="/features/redirectloop.php">Redirect Loop</a>
+            <a class="menu-item" href="/features/referrer.php">Referer Header</a>
+            <a class="menu-item" href="/features/requestheaders.php">Request Headers</a>
+            <a class="menu-item" href="/features/spaces.php">Spaces in URLs</a>
+            <a class="menu-item" href="/features/specialcharacters.php">Special Characters</a>
+            <a class="menu-item" href="/features/subdomains.php">Subdomains</a>
+            <a class="menu-item" href="/features/normalize.php">URL Normalization</a>
+            <a class="menu-item" href="/features/useragent.php">User Agent</a>
+          </nav>
+        </div>
+        <div class="three-fourths column body">
+          <h1>HTTP Compression - gzip</h1>
+          <p>This example page was compressed using the gzip algorithm.</p>
+          <p>Web servers that return content compressed using this method should have a <code>Content-Encoding</code> header with the value <code>gzip</code>. Older servers might use <code>x-gzip</code>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="footer">
+        <p class="copyright">Copyright &copy; 2023 Cyotek Ltd. All Rights Reserved.</p>
+        <p>
+          <a href="/about.php">About</a>
+          <a href="/changelog.php">Change Log</a>
+          <a href="mailto:support@cyotek.com?subject=HTTP%20Crawler%20Test%20Site%20Feedback%20%28%2Ffeatures%2Fhttpcompression-gzip.php%29">Comments or suggestions?</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

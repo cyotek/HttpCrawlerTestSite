@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.30.0
+
+#### Added
+
+* Added new HTTP Compression demonstration pages
+
 ### 1.29.3
 
 #### Changed

@@ -2,7 +2,7 @@
 
 define('SITE_TITLE', 'HTTP Crawler Test Site');
 
-define('WEBSITE_VERSION', '1.29.3');
+define('WEBSITE_VERSION', '1.30.0');
 
 session_start();
 
@@ -66,9 +66,9 @@ function addStatusCodeInformationTable($statusCode, $tests = null, $helpTopic = 
   echo '</ul>'. "\n";
 }
 
-function createTestLink($title, $ref)
+function createTestLink($title, $ref, $target = null)
 {
-  return '<a href="' . $ref . '" class="btn" title="' . $ref . '">' . $title . '</a>' . "\n";
+  return '<a href="' . $ref . '" class="btn" title="' . $ref . '" target="' . $target . '">' . $title . '</a>' . "\n";
 }
 
 function getHttpDescriptionWithCode($statusCode)
@@ -369,6 +369,7 @@ function createFeaturesNavBar()
   createNavigationLink('Cookies', getFeatureRelativeUrl() . 'cookies.php');
   createNavigationLink('Default Document', getFeatureRelativeUrl() . 'defaultdocuments.php');
   createNavigationLink('Downloads', getFeatureRelativeUrl() . 'downloads.php');
+  createNavigationLink('HTTP Compression', getFeatureRelativeUrl() . 'httpcompression.php');
   createNavigationLink('Image Formats', getFeatureRelativeUrl() . 'imageformats.php');
   createNavigationLink('Meta Refresh', getFeatureRelativeUrl() . 'metarefresh.php');
   createNavigationLink('Mime types and meta data', getFeatureRelativeUrl() . 'mimetypes.php');
@@ -627,4 +628,15 @@ function getRealHost()
   return strstr($_SERVER['HTTP_HOST'], ':', true);
 }
 
+function downloadFile($fileName, $contentType, $method)
+{
+  if (file_exists($fileName)) {
+      header('HTTP/1.1 200 OK');
+      header('Content-Encoding: ' . $method);
+      header('Content-Type: ' . $contentType);
+      header('Content-Length: ' . filesize($fileName));
+      readfile($fileName);
+      exit;
+  }
+}
 ?>
